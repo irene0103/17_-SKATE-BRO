@@ -122,9 +122,33 @@
         }
         .product{
             width: 100%;
-            height: 600px;
-            outline: 1px solid red;
+            display: flex;
+            /* outline: 1px solid red; */
         }
+        .product-pic{
+            width: 50%;
+            height: 700px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            background-color: #f8dc878b;
+        }
+        .product-pic img{
+            width: 450px;
+            height: 700px;
+            margin: auto;
+        }
+        .product-detail{
+            width: 50%;
+        }
+        .product-detail h2{
+            font-size: 35px;
+            font-weight: bold;
+            padding: 20px 40px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+
         .product-intro{
             width: 100%;
             background-color: #ffffff;
@@ -138,8 +162,8 @@
         }
         .size{
             background-color: #F8DC87;
-            font-weight: bold;
-            padding: 40px;
+            font-weight: bold; 
+            padding: 20px 0 20px 40px;
             height: 260px;
             width: 560px;
         }
@@ -148,6 +172,7 @@
             text-align: left;
             align-items: center;
             line-height: 2;
+            padding: 40px;
             font-size: 22px;
             letter-spacing: 2px;
         }
@@ -160,8 +185,9 @@
             flex-direction: row-reverse;
         }
         .product-intro2 .intro-content{
-            padding-right: 100px;
-            padding-top: 60px;
+            margin: 50px 80px 50px 0;
+            padding: 20px 40px;
+            background-color: #F8DC87;
         }
         .product-like{
             width: 1200px;
@@ -291,7 +317,12 @@
         </header>
         <div class="main-content">
             <div class="product">
-                
+                <div class="product-pic">
+                    <img src="./products/main.png" alt="">
+                </div>
+                <div class="product-detail">
+                    <h2>GRIZZLY OG ICE CREAM BEAR 7.75" COMPLETE-BOARD (MULTI)</h2>
+                </div>
             </div>
             <div class="product-intro">
                 <div class="product-intro1">
