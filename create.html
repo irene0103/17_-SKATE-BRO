@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Create your own</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
         *{
             list-style: none;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Aldrich', sans-serif;
         }
         .wrap{
             margin: auto;
             background-color: rgb(253, 251, 239);
-            background-attachment: fixed;
+            position: relative;
         }
         .main-content{
             max-width: 1200px;
             margin: auto;
-            padding-top: 200px;
+            padding-top: 180px;
+            position: relative;
+            /* display: flex; */
         }
         .main-header{
             background-color: #ECAF3A;
             width: 100%;
             box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
             position: fixed;
-            /* margin-top: -90px; */
+            /* top: -70px; */
             z-index: 25;
         }
         .main-header .container{
@@ -62,7 +65,6 @@
             padding: 5px 30px;
             font-size: 20px;
             font-weight: bold;
-            font-family: 'Aldrich', sans-serif;
         }
         .main-header .main-nav a:hover,.menu-list nav a:hover,.menu-list h3 a:hover{
             color: #AF292C;
@@ -85,7 +87,6 @@
             border: 0;
             background-color: #FDF1F1;
             padding: 5px 5px;
-            font-family: 'Aldrich', sans-serif;
         }
         .main-header .header-search button:focus,
         .main-header .header-search input:focus{
@@ -119,94 +120,114 @@
             margin: auto;
             vertical-align: middle;
         }
-        .signup{
-            width: 730px;
-            height: 750px;
-            margin: auto;
-            /* padding-top: 200px; */
-        }
-        form{
-            width: 600px;
-            height: 600px;
-            margin: auto;
-            background-color: #FFDBD0;
-            border-radius: 10px;
-            box-shadow: 13px 13px 4px #F1B500;
-        }
-        form h1{
+        .main-content h1{
             text-align: center;
-            font-size: 50px;
-            color: #FFD5A5;
-            text-shadow: 5px 5px 0px #B02B2A;
-            background-color: #D26844;
-            border-radius: 10px 10px 0 0;
-            padding: 15px;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .item{
-            display: flex;
-            margin: 30px;
-        }
-        .item label{
-            color: #D26844;
-            font-family: 'Lato', sans-serif;
-            font-size: 25px;
-            line-height: 40px;
-            width: 180px;
-            font-weight: bold;
-            display: inline-block;
-            text-align: center;
-            text-align-last:right;
-        }
-        .item input{
-            border: none;
-            width: 300px;
-            font-size: 20px;
-            background-color: #FFAC8F;
-            border-radius: 20px;
-            margin: 0 15px;
-        }
-        .item input:focus{
-            outline: none;
-        }
-
-        .policy{
-            display: flex;
-            margin: 50px;
-        }
-        .policy p{
+            font-size: 45px;
             margin: auto;
-            letter-spacing: 1px;
-            font-size: 12px;
-            color: #D26844;
-            font-weight:bold;
+            text-shadow: 5px 1px 0px #ECAF3A;
         }
-        .btn{
+        .create{
+            display: flex;
+        }
+        .create-pic{
+            
+        }
+        .create-pic img{
             width: 100%;
-            text-align: center;
+            height: 100%;
         }
-        .btn button{
-            background: none;
+        
+
+        
+        .btn-end{
+            display: flex;
+            margin: 50px 0;
+            justify-content: center;
+        }
+        .backtotop{
             border: none;
-            font-size: 20px;
-            color: #304B3D;
+            background: none;
+        }
+        .btn-end a{
+            text-decoration: none;
             background-color: #ECAF3A;
-            font-weight: bold;
+            width: 300px;
+            height: 50px;
+            font-size: 25px;
+            color: #304B3D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
             border-radius: 100px;
-            padding: 10px 40px;
-            cursor: pointer;
-            font-family: 'Lato', sans-serif;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             transition: .3s;
         }
-        .btn button:hover{
+        .backtotop a:hover{
             transform: scale(1.05);
         }
-        .btn button:active{
+        .backtotop a:active{
             transform: scale(1);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
         }
 
-
+        
+        .product-like{
+            width: 1200px;
+            position: relative;
+            height: 100%;
+            margin: auto;
+        }
+        .product-like p{
+            font-size: 25px;
+            margin: 40px 0 10px 0;
+        }
+        .swiper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            height: 100%;
+            margin: auto;
+            padding: 0 15px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 17px;
+            padding: 20px 5px;
+            line-height: 1.5;
+            letter-spacing: 1.5px;
+            flex-direction: column;
+            background-color: #F9DED5;
+            border: 4px solid #CD572F;
+            box-sizing: border-box;
+            box-shadow: 6px 7px 5px #FDBE02;
+            border-radius: 8px;
+            margin: 50px 0;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide a img {
+            display: block;
+            width: 150px;
+            height: 240px;
+            padding-bottom: 10px;
+            object-fit: cover;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            color: #ECAF3A;
+            padding: 0 20px;
+        }
 
         .main-footer{
             width: 100%;
@@ -277,38 +298,41 @@
                     <button><img src="./Skate Bro/search.png" alt=""></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></a></button>
+                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
                 <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
             </div>
         </header>
         <div class="main-content">
-            <div class="signup">
-                <form>
-                    <h1>SIGN UP</h1>
-                    <div class="item">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="" id="Email Address">
+            <h1>Create your own skateboard</h1>
+            <div class="create">
+                <div class="create-pic">
+                    <img src="./products/main.png" alt="">
+                </div>
+                <div class="create-detail">
+                </div>
+            </div>
+             <!-- Swiper -->
+            <div class="product-like">
+                <p>Find the inspiration...</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="./products/1.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/2.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/3.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/4.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/5.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/6.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/7.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/8.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/9.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
                     </div>
-                    <div class="item">
-                        <label for="Name">Name</label>
-                        <input type="text" name="" id="Name">
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="btn-end">
+                        <button class="backtotop">
+                            <a href="products.html">Back to the top</a>
                     </div>
-                    <div class="item">
-                        <label for="Phone Number">Phone Number</label>
-                        <input type="tel" name="" id="Phone Number">
-                    </div>
-                    <div class="item">
-                        <label for="Password">Password</label>
-                        <input type="password" name="" id="Password">
-                    </div>
-                    <div class="policy">
-                        <input type="checkbox" name="" id="policy">
-                        <p>I agree to the terms & conditions and understand the privacy policy.</p>
-                    </div>
-                    <div class="btn">
-                        <button>SIGN UP</button>
-                    </div>
-                </form>
             </div>
 
         </div>
@@ -362,5 +386,27 @@
             </div>
         </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 90,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
 </body>
 </html>

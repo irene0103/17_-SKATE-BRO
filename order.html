@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Order</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,66 +120,153 @@
             margin: auto;
             vertical-align: middle;
         }
-        .product{
-            width: 100%;
-            display: flex;
-            /* outline: 1px solid red; */
+        /* 3d box */
+        body {
+            --border: 3.5px;
+            --width: 90%;
+            --height: 160px;
+            --outline: 12px;
+            --translate: 8px;
+            --skew-angle: 45deg;
         }
-        .product-pic{
-            width: 50%;
-            height: 600px;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            background-color: #f8dc878b;
-        }
-        .product-pic img{
-            width: 350px;
-            height: 550px;
-            margin: auto;
-        }
-        .product-detail{
-            width: 50%;
-            height: 630px;
+        .border {
+            border: var(--border) solid black;
             background-color: #fff;
         }
-        .product-detail h1{
-            font-size: 32px;
-            font-weight: bold;
-            padding: 20px 40px;
-            line-height: 1.5;
-            letter-spacing: 2px;
+        .flex-row {
+            display: flex;
+            flex-direction: row;
         }
-        .product-describe{
-            padding: 0 40px;
-            font-size: 20px;
-            color: #6C6C6C;
-            line-height: 1.5;
-            letter-spacing: 1.5px;
+        .box {
+            width: var(--width);
+            height: var(--height);
+            margin-top: 20px;
+            background-color: #FFDBD0;
         }
-        .product-volume{
-            margin: 30px 0 10px 0;
-            padding: 20px 40px;
-            font-size: 20px;
-        }
-        .product-price{
-            margin: 10px 0 10px 0;
-            padding: 10px 40px;
-            font-weight: bold;
-            font-size: 30px;
-            color: #CD572F;
+        .bottom-outline {
+            width: var(--width);
+            height: var(--outline);
+            border-top-width: 0px !important;
+            transform: skew(var(--skew-angle)) translateX(var(--translate));
+            position: relative;
         }
 
-        .product-btn ,.btn-end{
-            display: flex;
-            margin: 50px 0;
-            justify-content: center;
+        /* height would be implicitly same as box */
+        .right-outline {
+            width: var(--outline);
+            border-left-width: 0 !important;
+            border-bottom-width: 0 !important;
+            transform: skew(0deg, var(--skew-angle)) translateY(var(--translate));
+            margin-top: 20px;
         }
-        .addtocart,.backtotop{
+/* 3d box */
+        .item{
+            display: flex;
+        }
+        .item h1{
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 3px 2px 0px #FE986B;
+            line-height: 1.5;
+            letter-spacing: 1.5px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #aaa;
+        }
+        .item-list{
+            display: flex;
+            height: 160px;
+
+        }
+        .item-description{
+            width: 70%;
+        }
+        .item-pic{
+            width: 30%;
+            height: 160px;
+        }
+        .item-pic img{
+            width: 80%;
+            height: 100%;
+            padding-left: 30px;
+        }
+        .item-title{
+            width: 50%;
+        }
+        .item-title h2{
+            margin: 30px 20px 10px 20px;
+            font-size: 20px;
+        }
+        .item-title p{
+            margin: 30px 20px 10px 20px;
+            font-size: 18px;
+        }
+        .item-volume{
+            width: 10%;
+            margin: auto;
+            padding-right: 20px;
+            font-size: 18px;
+        }
+        .item-del{
+            width: 5%;
+            margin: auto;
+            padding-right: 20px;
+            text-align: right;
+            font-size: 18px;
+        }
+        .order-summary{
+            width: 30%;
+            height: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #F5D79C;
+        }
+        .order-summary-list{
+            background-color: #FFEFD0 ;
+            padding-bottom: 70px;
+        }
+        .order-summary h2{
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 3px 2px 0px #ECAF3A;
+        }
+        .order-summary h3{
+            font-size: 25px;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: 'Aldrich', sans-serif;
+        }
+        .order-name{
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 20px;
+
+        }
+        .order-price{
+            padding: 10px;
+            font-size: 18px;
+            text-align: right;
+        }
+        .order-bottom{
+            margin-top: 80px;
+        }
+        .order-bottom-list{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            font-size: 18px;
+
+        }
+        .checkout,.continue{
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .checkout .checkout-btn{
             border: none;
             background: none;
         }
-        .product-btn a ,.btn-end a{
+        .checkout-btn a{
             text-decoration: none;
             background-color: #ECAF3A;
             width: 300px;
@@ -194,113 +281,17 @@
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             transition: .3s;
         }
-        .addtocart a:hover ,.backtotop a:hover{
+        .checkout-btn a:hover{
             transform: scale(1.05);
         }
-        .addtocart a:active ,.backtotop a:active{
+        .checkout-btn a:active{
             transform: scale(1);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
         }
-
-        .product-intro{
-            width: 100%;
-            height: fit-content;
-            background-color: #ffffff;
+        .continue a{
+            color: #000000;
+            font-size: 18px;
         }
-        .product-intro1,.product-intro2{
-            display: flex;
-        }
-        .product-intro1 .intro-content img{
-            width: 500px;
-            padding-left:10px;
-            height: fit-content;
-        }
-        .size{
-            background-color: #F8DC87;
-            font-weight: bold; 
-            padding: 20px 0 20px 70px;
-            height: 260px;
-            width: 560px;
-        }
-        .product-intro .intro-content{
-            width: 40%;
-            text-align: left;
-            align-items: center;
-            line-height: 2;
-            padding: 40px;
-            font-size: 22px;
-            letter-spacing: 2px;
-        }
-        .product-intro1 img,.product-intro2 img{
-            width: 460px;
-            height: 630px;
-            padding: 80px 70px 0 0;
-        }
-        .product-intro2{
-            flex-direction: row-reverse;
-        }
-        .product-intro2 .intro-content{
-            margin: 50px 110px 0 0;
-            padding: 20px 40px;
-            background-color: #F8DC87;
-        }
-        .product-like{
-            width: 1200px;
-            position: relative;
-            height: 100%;
-            margin: auto;
-        }
-        .product-like p{
-            font-size: 25px;
-            margin: 40px 0 10px 0;
-        }
-        .swiper {
-            display: flex;
-            flex-wrap: wrap;
-            width: 1000px;
-            height: 100%;
-            margin: auto;
-            padding: 0 15px;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 17px;
-            padding: 20px 5px;
-            line-height: 1.5;
-            letter-spacing: 1.5px;
-            flex-direction: column;
-            background-color: #F9DED5;
-            border: 4px solid #CD572F;
-            box-sizing: border-box;
-            box-shadow: 6px 7px 5px #FDBE02;
-            border-radius: 8px;
-            margin: 50px 0;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-        .swiper-slide a img {
-            display: block;
-            width: 150px;
-            height: 240px;
-            padding-bottom: 10px;
-            object-fit: cover;
-        }
-        .swiper-button-next, .swiper-button-prev{
-            color: #ECAF3A;
-            padding: 0 20px;
-        }
-
         .main-footer{
             width: 100%;
             background-color: #ECAF3A;
@@ -370,92 +361,116 @@
                     <button><img src="./Skate Bro/search.png" alt=""></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
+                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></a></button>
                 <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
             </div>
         </header>
         <div class="main-content">
-            <div class="product">
-                <div class="product-pic">
-                    <img src="./products/main.png" alt="">
-                </div>
-                <div class="product-detail">
-                    <h1>GRIZZLY OG ICE CREAM BEAR 7.75" COMPLETE-BOARD (MULTI)</h1>
-                    <div class="product-describe">
-                        <p>width: 7.75"<br>
-                        length: 31.375"<br>
-                        wheelbase: 14"<br>
-                        nose: 6.875"<br>
-                        tail: 6.375"</p>
+            <div class="item">
+                <div class="item-description">
+                    <h1>Item description</h1>
+                        <div class="flex-row">
+                            <div class="box border">
+                                <div class="item-list">
+                                    <div class="item-pic">
+                                        <img src="./Order/order1.png" alt="">
+                                    </div>
+                                    <div class="item-title">
+                                        <h2>Krooked Eyes8.06"</h2>
+                                        <p>$3,400</p>
+                                    </div>
+                                    <div class="item-volume">
+                                        - 1 +
+                                    </div>
+                                    <div class="item-del">
+                                        x
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-outline border"></div>
+                        </div>
+                        <div class="bottom-outline border"></div>
+                        <div class="flex-row">
+                            <div class="box border">
+                                <div class="item-list">
+                                    <div class="item-pic">
+                                        <img src="./Order/order2.png" alt="">
+                                    </div>
+                                    <div class="item-title">
+                                        <h2>Real Busenitz Worldwide 8.25"</h2>
+                                        <p>$3,400</p>
+                                    </div>
+                                    <div class="item-volume">
+                                        - 1 +
+                                    </div>
+                                    <div class="item-del">
+                                        x
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-outline border"></div>
+                          </div>
+                          <div class="bottom-outline border"></div>
+                        </div>
+                <div class="order-summary">
+                    <h2>ORDER SUMMARY</h2>
+                    <div class="order-summary-list">
+                        <h3>Item description</h3>
+                        <div class="order-name">
+                            <p>Krooked Eyes 8.06"</p>
+                        </div>
+                        <div class="order-price">
+                            <p>$3,400</p>
+                        </div>
+                        <div class="order-name">
+                            <p>Krooked Eyes 8.06"</p>
+                        </div>
+                        <div class="order-price">
+                            <p>$3,400</p>
+                        </div>
                     </div>
-                    <div class="product-volume">
-                        - 0 +
-                    </div>
-                    <div class="product-price">
-                        <p>$3,400</p>
-                    </div>
-                    <div class="product-btn">
-                        <button class="addtocart">
-                            <a href="order.html">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-intro">
-                <div class="product-intro1">
-                    <img src="./products/main-intro.png" alt="">
-                    <div class="intro-content">
-                        <img src="./products/size.png" alt="">
-                        <p class="size">
-                            Size:<br>
-                            -width: 7.75"<br>
-                            -length: 31.375"<br>
-                            -wheelbase: 14"<br>
-                            -nose: 6.875"<br>
-                            -tail: 6.375"<br>
-                            <br></p>
-                    </div>
-                </div>
-                <div class="product-intro2">
-                    <img src="./products/main-intro1.png" alt="">
-                    <div class="intro-content">
-                    <p>Grizzly OG Ice Cream Bear 7.75" deck<br>
-                        -Grizzly 5" trucks<br>
-                        -127 mm hanger width<br>
-                        -194 mm axle width<br>
-                        <br>
-                        Grizzly 52 mm 100A wheels<br>
-                        ABEC 7 bearings<br>
-                        7/8" Phillips bolt pack<br>
-                        Grizzly griptape with die-cut logo<br>
-                        <br>
-                        -medium concave<br>
-                        -standard popsicle shape<br>
-                        -7-ply maple construction<br> </p>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Swiper -->
-            <div class="product-like">
-                <p>You may also like...</p>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href=""><img src="./products/1.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/2.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/3.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/4.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/5.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/6.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/7.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/8.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/9.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                    </div>
-                </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="btn-end">
-                        <button class="backtotop">
-                            <a href="products.html">Back to the top</a>
+                    <div class="order-bottom">
+                        <div class="order-bottom-list">
+                            <div class="title">
+                                ITEMS SUBTOTAL
+                            </div>
+                            <div class="number">
+                                2
+                            </div>
+                        </div>
+                        <div class="order-bottom-list">
+                            <div class="title">
+                                SHIPPING
+                            </div>
+                            <div class="number">
+                                $60
+                            </div>
+                        </div>
+                        <div class="order-bottom-list">
+                            <div class="title">
+                                ORDER TOTAL
+                            </div>
+                            <div class="number">
+                                $6,860
+                            </div>
+                        </div>
+                        <div class="order-bottom-list">
+                            <div class="title">
+                                PAYMENT
+                            </div>
+                            <div class="number">
+                                VISA
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button class="checkout-btn">
+                                <a href="">CHECKOUT
+                                </a>
+                            </button>
+                        </div>
+                        <div class="continue">
+                            <a href="skateboards.html">CONTINUE SHOPPING</a>
+                        </div>
                     </div>
             </div>
 
@@ -510,27 +525,6 @@
             </div>
         </div>
     </div>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 90,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
     
 </body>
 </html>
