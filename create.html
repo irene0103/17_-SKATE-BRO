@@ -129,29 +129,83 @@
         .create{
             display: flex;
         }
-        .create-pic{
-            
-        }
         .create-pic img{
-            width: 100%;
-            height: 100%;
+            width: 140px;
+            height: 550px;
+            margin: 50px 0 50px 200px;
+        }
+        .create-detail{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
+            outline: 1px solid red
+        }
+        #theOutputText{
+            width: 100px;
+            height: 20px;
+            position: relative;
+            top: 250px;
+            left: -120px;
+            outline: 1px solid #aaa;
         }
         
+        #theText{
+            background-color: rgb(211, 207, 207);
+            line-height: 30px;
+            width: 300px;
+            border: none;
+            margin: 0 110px 20px 0;
+            font-size: 20px;
+        }
+        #theText:focus{
+            outline: none;
+        }
+        .title{
+            width: 450px;
+            font-size: 23px;
+            text-align: left;
+            margin: 30px 0 20px 0;
+            font-weight: bold;
+        }
+        .color-list,.pattern-list{
+            width: 300px;
+            height: 170px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background: #F7DDAC;
+            margin: 5px 20px;
+            border: 4px solid #000000;
+            box-shadow: 7px 7px 0px #CD572F;
+            border-radius: 26px;
+        }
+        .color-list a,.pattern-list a{
+            margin: auto;
+        }
 
-        
-        .btn-end{
+        .color-list img,.pattern-list img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        form p{
+            text-align: right;
+        }
+        .btn-end,.btn-finish{
             display: flex;
             margin: 50px 0;
             justify-content: center;
         }
-        .backtotop{
+        .backtotop,.finish{
             border: none;
             background: none;
         }
-        .btn-end a{
+        .btn-end a,.btn-finish a{
             text-decoration: none;
             background-color: #ECAF3A;
-            width: 300px;
+            width: fit-content;
+            padding: 0 25px;
             height: 50px;
             font-size: 25px;
             color: #304B3D;
@@ -163,10 +217,10 @@
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             transition: .3s;
         }
-        .backtotop a:hover{
+        .backtotop a:hover,.finish a:hover{
             transform: scale(1.05);
         }
-        .backtotop a:active{
+        .backtotop a:active,.finish a:active{
             transform: scale(1);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
         }
@@ -193,7 +247,7 @@
         .swiper-slide {
             text-align: center;
             font-size: 17px;
-            padding: 20px 5px;
+            padding: 15px 5px;
             line-height: 1.5;
             letter-spacing: 1.5px;
             flex-direction: column;
@@ -220,7 +274,7 @@
         .swiper-slide a img {
             display: block;
             width: 150px;
-            height: 240px;
+            height: 250px;
             padding-bottom: 10px;
             object-fit: cover;
         }
@@ -306,32 +360,84 @@
             <h1>Create your own skateboard</h1>
             <div class="create">
                 <div class="create-pic">
-                    <img src="./products/main.png" alt="">
+                    <img src="./pattern/blank1.png" alt="">
                 </div>
+                <div id="theOutputText"></div>
                 <div class="create-detail">
+                    <div class="color">
+                        <div class="title">
+                            1. Choose the fav color
+                        </div>
+                        <div class="color-list">
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="pattern">
+                        <div class="title">
+                            2. Choose the fav pattern
+                        </div>
+                        <div class="pattern-list">
+                            <a href=""><img src="./pattern/1-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/2-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/3-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/4-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/5-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/6-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/7-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/8-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/9-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/10-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/11-1.png" alt=""></a>
+                            <a href=""><img src="./pattern/12-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="title">
+                        3. Personalize your skateboard
+                    </div>
+                    <form>
+                        <label for="theText"></label>
+                        <input id="theText" type="text" placeholder="type...."/>
+                        <p>*Maximun 10 letters</p>
+                    </form>
                 </div>
+                
+            </div>
+            <div class="btn-finish">
+                <button class="finish">
+                    <a href="order.html">Finish and add to the cart</a>
             </div>
              <!-- Swiper -->
             <div class="product-like">
                 <p>Find the inspiration...</p>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href=""><img src="./products/1.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/2.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/3.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/4.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/5.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/6.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/7.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/8.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/9.png" alt=""></a>SKATEDELUXE EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/3-removebg-preview.png" alt=""></a>RAINBOW</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/9-removebg-preview.png" alt=""></a>GUMMI LOVE</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/5-removebg-preview.png" alt=""></a>SUN</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/8-removebg-preview.png" alt=""></a>AVOCADO</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/1-removebg-preview.png" alt=""></a>TOY MACHINE</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/4-removebg-preview.png" alt=""></a>GUMMY BEARS</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/7-removebg-preview.png" alt=""></a>PATTERN</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/10-removebg-preview.png" alt=""></a>CARPET</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/6-removebg-preview.png" alt=""></a>ROSE</div>
                     </div>
                 </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="btn-end">
                         <button class="backtotop">
-                            <a href="products.html">Back to the top</a>
+                            <a href="#">Back to the top</a>
                     </div>
             </div>
 
@@ -386,6 +492,11 @@
             </div>
         </div>
     </div>
+
+    <script src="./jQuery 3.6.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.6.0.js"><\/script>')</script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -406,6 +517,68 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+    // Initialize Swiper
+
+      $(function () {
+        var theText = $("#theText");
+        var theOutputText = $("#theOutputText");
+        var theOutputKeyPress = $("#theOutputKeyPress");
+        var theOutputKeyDown = $("#theOutputKeyDown");
+        var theOutputKeyUp = $("#theOutputKeyUp");
+        var theOutputFocusOut = $("#theOutputFocusOut");
+
+        theText.keydown(function (event) {
+            keyReport(event, theOutputKeyDown);
+        });
+
+        theText.keypress(function (event) {
+            keyReport(event, theOutputKeyPress);
+        });
+
+
+        theText.keyup(function (event) {
+            keyReport(event, theOutputKeyUp);
+        });
+
+        theText.focusout(function (event) {
+            theOutputFocusOut.html(".focusout() fired!");
+        });
+
+        theText.focus(function (event) {
+            theOutputFocusOut.html(".focus() fired!");
+        });
+
+    function keyReport(event, output) {
+        // catch enter key = submit (Safari on iPhone=10)
+        if (event.which == 10 || event.which == 13) {
+            event.preventDefault();
+        }
+        // show event.which
+        output.html(event.which + "&nbsp;&nbsp;&nbsp;&nbsp;event.keyCode " + event.keyCode);
+        // report invisible keys  
+        switch (event.which) {
+            case 0:
+                output.append("event.which not sure");
+                break;
+            case 13:
+                output.append(" Enter");
+                break;
+            case 27:
+                output.append(" Escape");
+                break;
+            case 35:
+                output.append(" End");
+                break;
+            case 36:
+                output.append(" Home");
+                break;
+        }
+        // show field content
+        theOutputText.text(theText.val());
+        }
+    });
+
     </script>
     
 </body>
