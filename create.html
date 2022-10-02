@@ -123,11 +123,23 @@
         .main-content h1{
             text-align: center;
             font-size: 45px;
-            margin: auto;
             text-shadow: 5px 1px 0px #ECAF3A;
         }
         .create{
             display: flex;
+        }
+        .create-change{
+            width: 50%;
+            height: 650px;
+        }
+        .create-pic{
+            display: none;
+            width: 140px;
+            height: 550px;
+            position:absolute;
+        }
+        .create-pic:target{
+            display: block;
         }
         .create-pic img{
             width: 140px;
@@ -135,19 +147,21 @@
             margin: 50px 0 50px 200px;
         }
         .create-detail{
+            margin-top: 50px;
             width: 50%;
+            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: right;
             align-items: flex-end;
-            outline: 1px solid red
         }
+	    
         #theOutputText{
             width: 100px;
             height: 20px;
             position: relative;
             top: 250px;
-            left: -120px;
+            left: -330px;
             outline: 1px solid #aaa;
         }
         
@@ -169,22 +183,22 @@
             margin: 30px 0 20px 0;
             font-weight: bold;
         }
-        .color-list,.pattern-list{
-            width: 300px;
-            height: 170px;
+        .color-list{
+            width: 350px;
+            height: 250px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
             background: #F7DDAC;
-            margin: 5px 20px;
+            margin: 30px 20px;
             border: 4px solid #000000;
             box-shadow: 7px 7px 0px #CD572F;
             border-radius: 26px;
         }
-        .color-list a,.pattern-list a{
+        .color-list a{
             margin: auto;
         }
 
-        .color-list img,.pattern-list img{
+        .color-list img{
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -192,16 +206,16 @@
         form p{
             text-align: right;
         }
-        .btn-end,.btn-finish{
+        .btn-finish{
             display: flex;
             margin: 50px 0;
             justify-content: center;
         }
-        .backtotop,.finish{
+        .finish{
             border: none;
             background: none;
         }
-        .btn-end a,.btn-finish a{
+        .btn-finish a{
             text-decoration: none;
             background-color: #ECAF3A;
             width: fit-content;
@@ -217,10 +231,10 @@
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             transition: .3s;
         }
-        .backtotop a:hover,.finish a:hover{
+        .finish a:hover{
             transform: scale(1.05);
         }
-        .backtotop a:active,.finish a:active{
+        .finish a:active{
             transform: scale(1);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
         }
@@ -344,7 +358,7 @@
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
-                    <a href="#">Create your own</a>
+                    <a href="create.html">Create your own</a>
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
@@ -359,56 +373,48 @@
         <div class="main-content">
             <h1>Create your own skateboard</h1>
             <div class="create">
-                <div class="create-pic">
-                    <img src="./pattern/blank1.png" alt="">
+                <div class="create-change">
+                    <div class="create-pic" id="img0"><img src="./pattern/blank1.png"></div>
+                    <div class="create-pic" id="img00"><img src="./pattern/black1.png"></div>
+                    <div class="create-pic" id="img1"><img src="./pattern/1-2.png"></div>
+                    <div class="create-pic" id="img2"><img src="./pattern/2-2.png"></div>
+                    <div class="create-pic" id="img3"><img src="./pattern/3-2.png"></div>
+                    <div class="create-pic" id="img4"><img src="./pattern/4-2.png"></div>
+                    <div class="create-pic" id="img5"><img src="./pattern/5-2.png"></div>
+                    <div class="create-pic" id="img6"><img src="./pattern/8-2.png"></div>
+                    <div class="create-pic" id="img7"><img src="./pattern/9-2.png"></div>
+                    <div class="create-pic" id="img8"><img src="./pattern/10-2.png"></div>
+                    <div class="create-pic" id="img9"><img src="./pattern/11-2.png"></div>
+                    <div class="create-pic" id="img10"><img src="./pattern/12-2.png"></div>
                 </div>
                 <div id="theOutputText"></div>
                 <div class="create-detail">
                     <div class="color">
                         <div class="title">
-                            1. Choose the fav color
+                        Choose the fav color
                         </div>
                         <div class="color-list">
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                    <div class="pattern">
-                        <div class="title">
-                            2. Choose the fav pattern
-                        </div>
-                        <div class="pattern-list">
-                            <a href=""><img src="./pattern/1-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/2-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/3-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/4-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/5-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/6-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/7-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/8-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/9-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/10-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/11-1.png" alt=""></a>
-                            <a href=""><img src="./pattern/12-1.png" alt=""></a>
+                            <a href="#img0"><img src="./pattern/888.png" alt=""></a>
+                            <a href="#img00"><img src="./pattern/777.png" alt=""></a>
+                            <a href="#img1"><img src="./pattern/1-1.png" alt=""></a>
+                            <a href="#img2"><img src="./pattern/2-1.png" alt=""></a>
+                            <a href="#img3"><img src="./pattern/3-1.png" alt=""></a>
+                            <a href="#img4"><img src="./pattern/4-1.png" alt=""></a>
+                            <a href="#img5"><img src="./pattern/5-1.png" alt=""></a>
+                            <a href="#img6"><img src="./pattern/8-1.png" alt=""></a>
+                            <a href="#img7"><img src="./pattern/9-1.png" alt=""></a>
+                            <a href="#img8"><img src="./pattern/10-1.png" alt=""></a>
+                            <a href="#img9"><img src="./pattern/11-1.png" alt=""></a>
+                            <a href="#img10"><img src="./pattern/12-1.png" alt=""></a>
                         </div>
                     </div>
                     <div class="title">
-                        3. Personalize your skateboard
+                    Personalize your skateboard
                     </div>
                     <form>
                         <label for="theText"></label>
                         <input id="theText" type="text" placeholder="type...."/>
-                        <p>*Maximun 10 letters</p>
+                        <p>*Maximum 10 letters</p>
                     </form>
                 </div>
                 
@@ -435,10 +441,6 @@
                 </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="btn-end">
-                        <button class="backtotop">
-                            <a href="#">Back to the top</a>
-                    </div>
             </div>
 
         </div>
