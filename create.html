@@ -22,6 +22,9 @@
             background-color: rgb(253, 251, 239);
             position: relative;
         }
+        :root {
+            scroll-padding-top: 7rem;
+        }
         .main-content{
             max-width: 1200px;
             margin: auto;
@@ -34,7 +37,7 @@
             width: 100%;
             box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
             position: fixed;
-            /* top: -70px; */
+            top: 0;
             z-index: 25;
         }
         .main-header .container{
@@ -123,14 +126,18 @@
         .main-content h1{
             text-align: center;
             font-size: 45px;
+            padding: 0 0 50px 0;
             text-shadow: 5px 1px 0px #ECAF3A;
         }
         .create{
             display: flex;
+            margin: 20px 0;
         }
         .create-change{
-            width: 50%;
-            height: 650px;
+            width: 30%;
+            margin: 0 10px 0 200px;
+            height: 630px;
+            outline: 5px solid #ECAF3A;
         }
         .create-pic{
             display: none;
@@ -144,10 +151,9 @@
         .create-pic img{
             width: 140px;
             height: 550px;
-            margin: 50px 0 50px 200px;
+            margin: 40px 0 10px 100px;
         }
         .create-detail{
-            margin-top: 50px;
             width: 50%;
             height: 50%;
             display: flex;
@@ -161,7 +167,8 @@
             height: 20px;
             position: relative;
             top: 250px;
-            left: -330px;
+            left: -220px;
+            color: #ECAF3A;
             outline: 1px solid #aaa;
         }
         
@@ -180,7 +187,7 @@
             width: 450px;
             font-size: 23px;
             text-align: left;
-            margin: 30px 0 20px 0;
+            margin: 40px 20px 30px 0;
             font-weight: bold;
         }
         .color-list{
@@ -189,7 +196,7 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             background: #F7DDAC;
-            margin: 30px 20px;
+            margin: 0 30px;
             border: 4px solid #000000;
             box-shadow: 7px 7px 0px #CD572F;
             border-radius: 26px;
@@ -208,7 +215,7 @@
         }
         .btn-finish{
             display: flex;
-            margin: 50px 0;
+            margin: 70px 0;
             justify-content: center;
         }
         .finish{
