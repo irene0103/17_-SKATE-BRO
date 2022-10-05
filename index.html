@@ -15,6 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Mansalva&family=Rock+Salt&family=Rubik+Dirt&family=Rubik+Wet+Paint&family=Ultra&display=swap');
         *{
             list-style: none;
             font-family: 'Aldrich', sans-serif;
@@ -354,13 +355,15 @@
         .content-1 img, .content-2 img{
             transform: scale(1);
             transition: .5s;
+            width: 100%;
+            height: 100%;
         }
         .content-1:hover img, .content-2:hover img{
-            transform: scale(1.1);
+            transform: scale(1.05);
             transition: .5s;
         }
         .products .items-best .title{
-            border-bottom: 4px solid #CD572F;
+            border-bottom: 3px solid #CD572F;
             padding: 10px;
             font-size: 20px;
             font-weight: bold;
@@ -371,10 +374,14 @@
             height: 730px;
             display: grid;
             grid-template-columns:repeat(2,1fr);
+            /* outline: 1px solid red; */
         }
         .content-1, .content-2{
             margin: auto;
-            padding: 20px;
+            padding-bottom: 80px;
+            height: 510px;
+            width: 290px;
+            /* outline: 1px solid red; */
         }
         .content-1 p, .content-2 p{
             text-align: center;
@@ -382,6 +389,7 @@
             font-size: 25px;
             padding: 10px;
             margin: 20px;
+            white-space: nowrap;
             line-height: 40px;
             color: #952426;
         }
@@ -418,18 +426,39 @@
             transform: scale(1);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
         }
+        .wrap-pic1{
+            background-color: #149a9ab7;
+            margin: auto;
+            width: 100%;
+
+        }
+        .wrap-pic2{
+            width: 100%;
+            height: 1150px;
+            margin: auto;
+            background-image: url("/Skate Bro/bgc1.png");
+        }
+        .skate-pic{
+            width: 1200px;
+            margin: auto;
+        }
         .skate-pic .slogan h1{
             width: 100%;
-            font-size: 60px;
-            color: #444444;
-            font-family: 'Zilla Slab Highlight';
-            text-align: center;
-            text-shadow: 4px 4px 4px #FFFFFF;
+            font-size: 56px;
+            text-align: center;  
+            letter-spacing: 2px;
+            /* -webkit-text-stroke:3.5px #c56b0b; */
+            color: #c56b0b;
+            text-shadow: 4px 4px 4px #ECAF3A;
+            /* font-family: 'Rubik Wet Paint', cursive; */
+            /* font-family: 'Gravitas One', cursive; */
+            font-family: 'Rock Salt', cursive;
+            /* font-family: 'Ultra', serif; */
             margin-top: 50px;
-            font-weight: bold;
             position: relative;
+            font-weight: lighter;
             z-index: 5;
-            top: 180px;
+            top: 150px;
         }
         .skate-pic-list{
             display: flex;
@@ -442,14 +471,14 @@
             opacity: 76%;
             position: relative;
             top: 30px;
-            right: 50px;
+            right: 60px;
         }
         .skate-pic-list img:nth-child(2){
             width: 410px;
             height: 610px;
             position: relative;
             top: 180px;
-            right: 100px;
+            right: 80px;
             z-index: 3;
         }
         .skate-pic-list img:nth-child(3){
@@ -457,10 +486,10 @@
             height: 720px;
             opacity: 76%;
             position: relative;
-            right: 150px;
+            right: 90px;
         }
         .customize button{
-            margin: 100px 0 70px 0;
+            margin: 90px 0 70px 0;
             background: none;
             border: none;
 
@@ -512,10 +541,6 @@
             transform: scale(1);
             transition: .5s;
             /* box-shadow: 3px 6px 4px #FDBE02; */
-        }
-        .customize-pic .box-r img:nth-child(1):hover{  
-            transform: scale(1.05);
-            transition: .5s;
         }
         .customize-pic .box-r img:nth-child(2){
             position: relative;
@@ -647,6 +672,8 @@
         <div class="banner">
             <img src="./banner/banner1.gif" alt="">
         </div> 
+        
+    <div class="wrap-pic1">
         <div class="banner-brands">
             <div class="brands"><img src="./Skate Bro/brands/1.png" alt=""></div>
             <div class="brands"><img src="./Skate Bro/brands/2.png" alt=""></div>
@@ -768,11 +795,11 @@
                     <div class="title">BEST SELLERS!!!</div>
                     <div class="content">
                         <div class="content-1">
-                            <a href="skateboards.html"><img src="./Skate Bro/item7.png" alt=""></a>
-                            <p>SUPREME $3,400</p>
+                            <a href="skateboards.html"><img src="./Skate Bro/item10.png" alt=""></a>
+                            <p>SUPREME <br>$3,400</p>
                         </div>
                         <div class="content-2">
-                            <a href="skateboards.html"><img src="./Skate Bro/item8.png" alt=""></a>
+                            <a href="skateboards.html"><img src="./Skate Bro/item11.png" alt=""></a>
                             <p>Pacheco 93 Til Deck <br>$3,400</p>
                         </div>
                     </div>
@@ -785,6 +812,9 @@
                     </a>
                 </button>
             </div>
+        </div>
+    </div>
+        <div class="wrap-pic2">
             <div class="skate-pic">
                 <div class="slogan">
                     <h1>SKATE FOR FUN - NOT FOR FAME.</h1>
@@ -795,6 +825,8 @@
                     <img src="./Skate Bro/skate-pic3.jpg" alt="">
                 </div>
             </div>
+        </div>
+        <div class="main-content">
             <div class="customize">
                 <button>
                     <a href="create.html">Create your own skateboard 
@@ -806,7 +838,7 @@
                         <img src="./Skate Bro/doll.png" alt="">
                     </div>
                     <div class="box-r">
-                        <a href="create.html"><img src="./Skate Bro/board.png" alt=""></a>
+                        <img src="./Skate Bro/board.png" alt="">
                         <img src="./Skate Bro/wheels.png" alt="">
                     </div>
                 </div>
@@ -821,6 +853,7 @@
                 <img src="Skate Bro/banner-end.png" alt="">
             </div> -->
         </div>
+
         <div class="main-footer">
             <div class="banner-end">
                 <img src="./Skate Bro/banner-end1.png" alt="">
