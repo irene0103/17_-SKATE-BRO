@@ -25,7 +25,7 @@
     
         .breadcrumb{
             width: 80%;
-            margin: 10px 55px;
+            margin: 10px 30px;
             padding-top: 15px;
         }
         .breadcrumb ol{
@@ -44,7 +44,7 @@
         }
         .breadcrumb li a{
             text-decoration: none;
-            font-size: 20px;
+            font-size: 17px;
             color: #000000;
             font-weight: bold;
             letter-spacing: 3px;
@@ -87,70 +87,65 @@
             width: 950px;
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            margin: auto;
+            padding-top: 25px;
         }
-        .wheels-item{
-            width: 80%;
-            height: 210px;
-            margin: 25px;
-            background-color: #F9DED5;
-            outline: 3px solid #CD572F;
-            border-radius: 15px;
-            box-shadow: 6px 6px 2px #F1B500;
+        .wheels-list{
+            width: 170px;
+            margin: 10px 25px;
             position: relative;
         }
         .wheels-pic{
             width: 170px;
             height: 110px;
-            margin: auto;
+            padding: 40px 10px;
+            background-color: #F9DED5;
+            outline: 3px solid #CD572F;
+            border-radius: 15px;
+            box-shadow: 6px 6px 2px #F1B500;
         }
         .wheels-pic img{
             width: 100%;
             height: 100%;
-            padding: 5px 0;
         }
         .wheels-content{
-            height: 70px;
             text-align: center;
-            margin-top:20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            font-size: 15px;
+            margin-top:11px;
+            font-size: 16px;
+            font-weight: bold;
             line-height: 1.3;
+            padding: 5px;
             letter-spacing: 1.5px;
         }
+        .wheels-check a{
+            text-decoration: none;
+        }
         .wheels-check{
-            width: 100%;
-            height: 100%;
+            width: 180px;
+            height: 50px;
+            margin-left: 5px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: auto; 
-            background-color: #000000b6;
-            border-radius: 15px;
+            background-color: #ffffffbd;
+            border-radius: 0 0 15px 15px;
             position: absolute;
+            bottom: 63px;
+            z-index: 2;
             opacity: 0;
             transition: .7s;
         }
-        .wheels-check p{
-            color: #ffffff;
-            text-align: center;
-            font-size: 15px;
-            padding: 15px 5px;
-            line-height: 1.5;
-            letter-spacing: 2px;
-        }
+        
         .wheels-check img{
             width: 30px;
             height: 30px;
-            padding: 10px 20px;
+            margin: 20px;
             transition: .5s;
         }
         .wheels-check img:hover{
-            transform: scale(1.2);
-            transition: 1s;
+            transform: scale(1.09);
+            transition: .5s;
         }
 
         .wheels-item:hover .wheels-check{
@@ -223,176 +218,189 @@
                     <li><a href="">Wheels</a></li>
                 </ol>
             </div>
-            <div class="wheels">
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/1.png" alt="">
-                    </div>
-                    <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
-                    </div>
-                </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/2.png">
+            <section class="wheels">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/1.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/3.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/2.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/4.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/3.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/5.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/4.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/6.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/5.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/7.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/6.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/8.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/7.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/9.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/8.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/10.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/9.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/11.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/10.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-                <div class="wheels-item">
-                    <div class="wheels-check">
-                        <p>SUPERCRUISER WHEELS <br>62MM 88A</p>
-                        <p>$800</p>
-                        <a href=""><img src="./Skate Bro/search-wh.png" alt="">
-                        <img src="./Skate Bro/cart-wh.png" alt=""></a>
-                    </div>
-                    <div class="wheels-pic">
-                        <img src="./Wheels/12.png">
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/11.png" alt="">
+                        </div>
                     </div>
                     <div class="wheels-content">
-                        SUPERCRUISER WHEELS <br>62MM 88A
+                        <p>WHEELS</p>
+                        <p>$800</p>
                     </div>
                 </div>
-            </div>
+                <div class="wheels-list">
+                    <div class="wheels-item">
+                        <div class="wheels-check">
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
+                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                        </div>
+                        <div class="wheels-pic">
+                            <img src="./Wheels/12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="wheels-content">
+                        <p>WHEELS</p>
+                        <p>$800</p>
+                    </div>
+                </div>
+                
+            </section>
 
             <div class="page">
                 <ul>
@@ -425,7 +433,7 @@
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
                             <nav>
-                                <a href="skateboards.html">Complete</a>
+                                <a href="skateboards.html">Completes</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>
                             </nav>
