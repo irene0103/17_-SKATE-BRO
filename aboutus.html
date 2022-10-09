@@ -16,106 +16,81 @@
             list-style: none;
             font-family: 'Aldrich', sans-serif;
         }
+        .banner{
+            width: 100%;
+            padding-top: 120px;
+        }
+        .banner img{
+            width: 100%;
+        }
         .main-content{
             max-width: 1200px;
             margin: auto;
-            position: relative;
         }
-        .banner img{
-            padding-top: 120px;
-            width: 100%;
-            height: 100%;
-        }
-        .main-content h1{
-            font-size: 70px;
-            position: relative;
-            top: 275px;
-            right: 30px;
-            z-index: 4;
-        }
-        .intro{
-            width: 100%;
+        .content1,.content2,.content3{
             display: flex;
-            margin: 120px 0 10px 0;
-            position: relative;
+            font-family: 'Lato', sans-serif;
         }
-        .intro-content{
-            width: fit-content;
-            height: fit-content;
-            /* background-color: #FEDF81; */
-            margin: 140px 0;
-            font-size: 18px;
+        .content1 img{
+            width: 500px;
+            height: 650px;
+            position: relative;
+            bottom: 30px;
+        }
+        .content1 .textarea1{
+            margin: 30px;
+        }
+        .content1 .textarea1 h1{
+            font-size: 80px;
             font-weight: bold;
-            padding: 50px;
-            line-height: 2.5;
-            letter-spacing: 1.5px;
-        }
-        
-        .intro-pic, .intro-pic1{
-            width: 50%;
-            display: flex;
-        }
-        .intro-pic img:nth-child(1){
-            width: 250px;
-            height: 400px;
+            color: #ECAF3A;
             position: relative;
-            top: 60px;
-            z-index: 1;
+            right: 60px;
+            top: 20px;
+            font-family: 'Lato', sans-serif;
         }
-        .intro-pic img:nth-child(2){
-            width: 240px;
-            height: 300px;
-            position: relative;
-            top: 250px;
-            z-index: 2;
+        .content1 .textarea1 p,.content2 .textarea2 p,.content3 p{
+            font-size: 20px;
+            color: rgb(137, 101, 25);
+            margin: 110px 40px 20px 30px;
+            line-height: 30px;
+            font-family: 'Lato', sans-serif;
         }
-        .intro-pic img:nth-child(3){
-            width: 230px;
-            height: 330px;
-            position: relative;
-            right: 255px;
-            bottom: 55px;
-            z-index: 3;
+        .content2 .textarea2 p{
+            margin: 50px;
         }
-        .intro-content2{
-            width: fit-content;
-            height: fit-content;
-            /* background-color: #6BBFBF; */
-            margin: 70px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 50px;
-            line-height: 2.5;
-            letter-spacing: 1.5px;
+        .content3 p{
+            margin: 90px;
         }
-        .intro-pic1 img{
-            width: 400px;
+        .content2 img{
+            width: 500px;
+            height: 650px;
             position: relative;
             bottom: 90px;
-            left: 20px;
         }
-
-        .pic-list{
-            display: flex;
-            width: 100%;
-            overflow: hidden;
+        .content2 .textarea2 h2{
+            font-size: 45px;
+            text-align: center;
+            color: #ECAF3A;
+            margin: 60px 0 0 0;
+            font-family: 'Lato', sans-serif;
         }
-        .pic-list img{
-            vertical-align: top;
-            width: 100%;
-            transform: (1);
-            transition: 1s linear;
+        
+        .content3 img{
+            width: 400px;
+            height: 450px;
+            position: relative;
+            bottom: 150px;
+            left: 30px;
         }
-        .pic-list img:hover{
-            transform: scale(1.03);
-            transition: 1s linear;
-        }
-        .pic-list img:nth-child(1),
-        .pic-list img:nth-child(2),
-        .pic-list img:nth-child(3),
-        .pic-list img:nth-child(4),
-        .pic-list img:nth-child(5){
-            width: 20%;
+        .content3-title h3{
+            font-size: 60px;
+            width: 550px;
+            transform: rotate(270deg);
+            position: relative;
+            right: 260px;
+            bottom: 300px;
+            color: #ECAF3A;
         }
     </style>
 </head>
@@ -142,41 +117,38 @@
             </div>
         </header>
         <div class="banner">
-            <img src="./About us/banner.png" alt="">
+            <img src="./About us/banner111.jpg" alt="">
         </div>
-        
         <div class="main-content">
-            <div data-aos="zoom-in-right"><h1>Skate For Life</h1></div>
-            <div data-aos="fade-left">
-                <div class="intro">
-                    <div class="intro-content">
-                        <p>Skateboarding requires a lot of focus and control. You’ll improve your balance and you’ll learn how to fall properly.</p>
-                    </div>
-                    <div class="intro-pic">
-                        <img src="./About us/3.jfif" alt="">
-                        <img src="./About us/2.jfif" alt="">
-                        <img src="./About us/1.jfif" alt="">
+            <div class="content1">
+                <div data-aos="fade-right">
+                    <img src="./About us/content1.png" alt="">
+                </div>
+                <div class="textarea1">
+                    <div data-aos="zoom-in-left">
+                        <h1>Skate For Life</h1>
+                        <p>Bringing together the best of skate culture and street fashion, Route One has been kitting out skaters for over three decades. From seasoned pros to park first-timers, we’re about perfect setups, support and style – for everyone.</p>
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right">
-                <div class="intro">
-                    <div class="intro-pic1">
-                        <img src="./About us/4.jfif" alt="">
+            <div class="content2">
+                <div data-aos="fade-right">
+                    <div class="textarea2">
+                    <h2>Our Story</h2>
+                    <p>In 1989, two friends bailed on London life and headed West. Dodging burn out, and ready to make a living doing something they loved, they set up a warehouse in a terraced house in Bristol, and started distributing action sports kit.</p>
                     </div>
-                    <div class="intro-content2">
-                        <p>You don’t have to be a pro. Skateboarders at all levels enjoy themselves and skate to their ability. More skilled skaters know what it’s like to learn basic tricks and most of them respect you for even trying.</p>
-                    </div>
+                </div>
+                <div data-aos="zoom-in-left"><img src="./About us/content2.jfif" alt=""></div>
+            </div>
+            <div data-aos="zoom-in-right">
+                <div class="content3">
+                <img src="./About us/content4.jfif" alt="">
+                <p>Before too long (and after a few false starts) they opened the doors to the first Route One store. Over 30 years and six more stores later, we’ve helped tens of thousands of people dress, feel and skate better.</p>
                 </div>
             </div>
-                <div class="pic-list">
-                    <img src="./About us/11.jfif" alt="">
-                    <img src="./About us/55.jfif" alt="">
-                    <img src="./About us/22.png" alt="">
-                    <img src="./About us/33.jfif" alt="">
-                    <img src="./About us/44.jfif" alt="">
-                </div>
-
+            <div class="content3-title">
+                <h3>Passion Pays Off</h3>
+            </div>
         </div>
         <div class="main-footer">
             <div class="footer-content">

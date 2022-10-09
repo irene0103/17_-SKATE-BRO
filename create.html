@@ -32,22 +32,29 @@
             text-align: center;
             font-size: 45px;
             padding: 0 0 50px 0;
+            color: #304B3D;
             text-shadow: 5px 1px 0px #ECAF3A;
         }
         .process{
+            width: 100%;
             list-style: none;
             display: flex;
             justify-content: center;
+            margin-bottom: 80px;
         }
         .process li{
             font-family: 'Lato', sans-serif;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             padding: 10px;
+            font-size: 19px;
             color: #ffffff;
-            background-color: #000000;
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-color: #ECAF3A;
             border-radius: 50%;
             display: flex;
+            text-align: center;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -67,13 +74,23 @@
             bottom: 0;
             margin: auto;
         }
-        
-        .material-symbols-outlined {
+        .material-symbols-outlined{
+            font-size: 50px;
+            margin: auto;
             font-variation-settings:
             'FILL' 0,
             'wght' 400,
             'GRAD' 0,
             'opsz' 48
+        }
+        .process li .step{
+            font-size: 21px;
+            text-align: center;
+            position: relative;
+            top: 45px;
+            color: #CD572F;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
         }
 
         .create{
@@ -217,10 +234,10 @@
             line-height: 1.5;
             letter-spacing: 1.5px;
             flex-direction: column;
-            background-color: #F9DED5;
+            background-color: #f8d3c3;
             border: 4px solid #CD572F;
             box-sizing: border-box;
-            box-shadow: 6px 7px 5px #FDBE02;
+            box-shadow: 6px 7px #FDBE02;
             border-radius: 8px;
             margin: 50px 0;
             /* Center slide text vertically */
@@ -275,10 +292,10 @@
         <div class="main-content">
             <h1>Create your own skateboard</h1>
             <ul class="process">
-                <li>Choose the board</li>
-                <li>Choose the color or pattern</li>
-                <li>Personalize your skateboard</li>
-                <li><span class="material-symbols-outlined">skateboarding</span>Finish and add to cart</li>
+                <li><span class="material-symbols-outlined">touch_app</span>Choose <span class="step">Step.1</span></li>
+                <li><span class="material-symbols-outlined">hvac</span>Pattern<span class="step">Step.2</span></li>
+                <li><span class="material-symbols-outlined">keyboard</span>Personalize<span class="step">Step.3</span></li>
+                <li><span class="material-symbols-outlined">skateboarding</span>Finish<span class="step">Step.4</span></li>
             </ul>
             <div class="create">
                 <div class="create-change">
@@ -370,7 +387,7 @@
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
                             <nav>
-                                <a href="skateboards.html">Complete</a>
+                                <a href="skateboards.html">Completes</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>
                             </nav>
