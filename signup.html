@@ -12,8 +12,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
         *{
-            list-style: none;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Aldrich', sans-serif;
         }
         .main-content{
             max-width: 1200px;
@@ -33,6 +32,7 @@
             background-color: #FFDBD0;
             border-radius: 10px;
             box-shadow: 13px 13px 4px #F1B500;
+            font-family: 'Lato', sans-serif;
         }
         form h1{
             text-align: center;
@@ -81,6 +81,7 @@
             font-size: 13px;
             color: #D26844;
             font-weight:bold;
+            font-family: 'Lato', sans-serif;
         }
         .btn{
             width: 100%;
@@ -113,7 +114,7 @@
 <body>
     <div class="wrap">
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <a href="index.html" class="logo">
                     <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                 </a>
@@ -152,10 +153,10 @@
                         <label for="Password">Password</label>
                         <input type="password" name="" id="Password">
                     </div>
-                    <div class="policy">
+                    <label class="policy">
                         <input type="checkbox" name="" id="policy">
                         <p>I agree to the terms & conditions and understand the privacy policy.</p>
-                    </div>
+                    </label>
                     <div class="btn">
                         <button>SIGN UP</button>
                     </div>

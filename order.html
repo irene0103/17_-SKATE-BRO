@@ -104,11 +104,24 @@
             font-size: 18px;
         }
         .item-volume{
-            width: 10%;
-            margin: auto;
-            padding-right: 20px;
-            font-size: 18px;
+            margin: 20px 40px;
+            display: flex;
+            /* padding-right: 20px; */
+        }
+        .item-volume input[type="button"]{
+            background: none;
+            border: none;
             cursor: pointer;
+            font-size: 15px;
+        }
+        .item-volume input[type="button"]:hover{
+            color: #ECAF3A;
+        }
+        .item-volume input[type="text"]{
+            background: none;
+            border: none;
+            text-align: center;
+            font-size: 18px;
         }
         .item-del{
             width: 5%;
@@ -205,7 +218,7 @@
 <body>
     <div class="wrap">
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <a href="index.html" class="logo">
                     <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                 </a>
@@ -239,7 +252,9 @@
                                         <p>$3,400</p>
                                     </div>
                                     <div class="item-volume">
-                                        - 1 +
+                                        <input type="button" class="btnMinus" value="-">
+                                        <input type="text" class="qty" size="4" value="0">
+                                        <input type="button" class="btnPlus" value="+">
                                     </div>
                                     <div class="item-del">
                                         x
@@ -260,7 +275,9 @@
                                         <p>$3,400</p>
                                     </div>
                                     <div class="item-volume">
-                                        - 1 +
+                                        <input type="button" class="btnMinus" value="-">
+                                        <input type="text" class="qty" size="4" value="0">
+                                        <input type="button" class="btnPlus" value="+">
                                     </div>
                                     <div class="item-del">
                                         x
@@ -384,6 +401,8 @@
             </div>
         </div>
     </div>
+    <!-- button -->
+    <script src="./button.js"></script>
     
 </body>
 </html>

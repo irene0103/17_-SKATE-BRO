@@ -49,7 +49,7 @@
             top: 20px;
             font-family: 'Lato', sans-serif;
         }
-        .content1 .textarea1 p,.content2 .textarea2 p,.content3 p{
+        .content1 .textarea1 p,.content2 .textarea2 p,.textarea3 p{
             font-size: 20px;
             color: rgb(137, 101, 25);
             margin: 110px 40px 20px 30px;
@@ -92,12 +92,52 @@
             bottom: 300px;
             color: #ECAF3A;
         }
+        @media screen and (max-width:768px){
+            .content1,.content2,.content3{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .content1 img{
+                width: 90%;
+                height: auto;
+                margin: 50px 25px 0 25px;
+            }
+            .content1 .textarea1 h1{
+                font-size: 50px;
+                margin: 0 0 30px 90px;
+            }
+            .content1 .textarea1 p{
+                margin: 30px;
+            }
+            .content2 img,.content3 img{
+                width: 90%;
+                height: auto;
+                bottom: 0;
+                left: 0;
+                margin: 0 25px 20px 25px;
+            }
+            .content2 .textarea2 h2{
+                text-align: left;
+                margin: 80px 60px 0 60px;
+            }
+           
+            .content2 .textarea2 p{
+                margin: 10px 60px 80px 60px;
+            }
+            
+            .content3 .textarea3 p{
+                margin: 20px 80px 0 80px;
+            }
+
+        }
     </style>
 </head>
 <body>
     <div class="wrap">
+        <!-- navbar -->
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <a href="index.html" class="logo">
                     <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                 </a>
@@ -116,40 +156,79 @@
                 <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
             </div>
         </header>
-        <div class="banner">
-            <img src="./About us/banner111.jpg" alt="">
-        </div>
-        <div class="main-content">
-            <div class="content1">
-                <div data-aos="fade-right">
-                    <img src="./About us/content1.png" alt="">
-                </div>
-                <div class="textarea1">
-                    <div data-aos="zoom-in-left">
-                        <h1>Skate For Life</h1>
-                        <p>Bringing together the best of skate culture and street fashion, Route One has been kitting out skaters for over three decades. From seasoned pros to park first-timers, we’re about perfect setups, support and style – for everyone.</p>
+        <!-- banner -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="banner">
+                        <img src="./About us/banner111.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="content2">
-                <div data-aos="fade-right">
-                    <div class="textarea2">
-                    <h2>Our Story</h2>
-                    <p>In 1989, two friends bailed on London life and headed West. Dodging burn out, and ready to make a living doing something they loved, they set up a warehouse in a terraced house in Bristol, and started distributing action sports kit.</p>
+        </div>
+        
+        <!-- about-us -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="content1">
+                                <div class="col-12 col-md-6">
+                                    <div data-aos="fade-right">
+                                        <img src="./About us/content1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="textarea1">
+                                        <div data-aos="zoom-in-left">
+                                            <h1>Skate For Life</h1>
+                                            <p>Bringing together the best of skate culture and street fashion, Route One has been kitting out skaters for over three decades. From seasoned pros to park first-timers, we’re about perfect setups, support and style – for everyone.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content2">
+                                <div class="col-12 col-md-6">
+                                    <div data-aos="fade-right">
+                                        <div class="textarea2">
+                                            <h2>Our Story</h2>
+                                            <p>In 1989, two friends bailed on London life and headed West. Dodging burn out, and ready to make a living doing something they loved, they set up a warehouse in a terraced house in Bristol, and started distributing action sports kit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div data-aos="zoom-in-left">
+                                        <img src="./About us/content2.jfif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div data-aos="zoom-in-right">
+                                <div class="content3">
+                                    <div class="col-12 col-md-6">
+                                        <img src="./About us/content4.jfif" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="textarea3">
+                                            <p>Before too long (and after a few false starts) they opened the doors to the first Route One store. Over 30 years and six more stores later, we’ve helped tens of thousands of people dress, feel and skate better.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content3-title">
+                            <h3>Passion Pays Off</h3>
+                        </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-left"><img src="./About us/content2.jfif" alt=""></div>
-            </div>
-            <div data-aos="zoom-in-right">
-                <div class="content3">
-                <img src="./About us/content4.jfif" alt="">
-                <p>Before too long (and after a few false starts) they opened the doors to the first Route One store. Over 30 years and six more stores later, we’ve helped tens of thousands of people dress, feel and skate better.</p>
-                </div>
-            </div>
-            <div class="content3-title">
-                <h3>Passion Pays Off</h3>
             </div>
         </div>
+        
+        <!-- footer -->
         <div class="main-footer">
             <div class="footer-content">
                 <div class="footer-area">

@@ -61,13 +61,22 @@
             letter-spacing: 1.5px;
         }
         .product-volume{
-            margin: 50px 40px 30px 40px;
-            width: 100px;
-            text-align: center;
-            padding: 5px;
-            font-size: 20px;
+            margin: 20px 40px;
+        }
+        .product-volume input[type="button"]{
+            /* background: none; */
+            border: none;
             cursor: pointer;
-            border: 1px solid black;
+            font-size: 23px;
+        }
+        .product-volume input[type="button"]:hover{
+            color: #ECAF3A;
+        }
+        .product-volume input[type="text"]{
+            background: none;
+            border: none;
+            text-align: center;
+            font-size: 20px;
         }
         .product-price{
             margin: 10px 0 10px 0;
@@ -212,8 +221,9 @@
 </head>
 <body>
     <div class="wrap">
+        <!-- navbar -->
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <a href="index.html" class="logo">
                     <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                 </a>
@@ -232,6 +242,7 @@
                 <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
             </div>
         </header>
+        <!-- product -->
         <div class="main-content">
             <div class="product">
                 <div class="product-pic">
@@ -247,16 +258,17 @@
                         tail: 6.375"</p>
                     </div>
                     <div class="product-volume">
-                        -  0  +
+                        <input type="button" class="btnMinus" value="-">
+                        <input type="text" class="qty" size="4" value="0">
+                        <input type="button" class="btnPlus" value="+">	
                     </div>
-                    
-                    
                     <div class="product-price">
                         <p>$3,400</p>
                     </div>
                     <div class="product-btn">
                         <button class="addtocart">
                             <a href="order.html">Add to cart</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -318,8 +330,8 @@
                             <a href="products.html">Top</a>
                     </div>
             </div>
-
         </div>
+        <!-- footer -->
         <div class="main-footer">
             <div class="footer-content">
                 <div class="footer-area">
@@ -370,6 +382,8 @@
             </div>
         </div>
     </div>
+    <!-- button -->
+    <script src="./button.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 

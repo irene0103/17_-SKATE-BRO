@@ -1,6 +1,9 @@
+*{
+    list-style: none;
+}
 .wrap{
     width: 100%;
-    background-color: rgb(253, 251, 239);
+    background-color: #F9EFD7;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -12,7 +15,7 @@
     position: fixed;
     z-index: 25;
 }
-.main-header .container{
+.main-header .container-header{
     max-width: 1200px;
     display: flex;
     align-items: center;

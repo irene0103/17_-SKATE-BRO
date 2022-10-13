@@ -13,11 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
         *{
-            list-style: none;
             font-family: 'Aldrich', sans-serif;
-        }
-        .wrap{
-            background-color: #F9EFD7;
         }
         .main-content{
             max-width: 1200px;
@@ -28,7 +24,7 @@
             width: 100%;
             margin: auto;
         }
-        /* 側邊攔購物車 */
+        /* side-cart */
         /* .side-menu{
             width: 100%;
             position: relative;
@@ -329,20 +325,25 @@
             transform: scale(1.05);
             transition: .5s;
         }
+        /* button */
         .btn-shop{
             margin: 50px;
             text-align: center;
         }
-        .btn-shop .shop{
+        .btn-shop .shop,.customize button{
             border: none;
             background: none;
         }
-        .btn-shop a{
+        .customize button{
+            margin: 90px 0 70px 0;
+        }
+        .btn-shop a,.customize button a{
             text-decoration: none;
             background-color: #ECAF3A;
-            width: 300px;
-            height: 50px;
+            width: fit-content;
+            height: fit-content;
             font-size: 25px;
+            padding: 8px 25px;
             color: #304B3D;
             display: flex;
             justify-content: center;
@@ -352,9 +353,10 @@
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             transition: .3s;
         }
-        .btn-shop .shop img{
+        .btn-shop .shop img,.customize button img{
             margin: 0 10px;
         }
+        
         .shop a:hover, .customize button a:hover, .side-cart button a:hover{
             transform: scale(1.05);
         }
@@ -437,34 +439,7 @@
         .third-area{
             width: 100%;
             height: 100%;
-            /* background-image: url("/Skate Bro/bgc1.png"); */
-            /* background-color: #E2DCCE; */
         }
-        .customize button{
-            margin: 90px 0 70px 0;
-            background: none;
-            border: none;
-
-        }
-        .customize button a{
-            text-decoration: none;
-            background-color: #ECAF3A;
-            width: 550px;
-            height: 60px;
-            color: #304B3D;
-            display: flex;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            border-radius: 100px;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            transition: .3s;
-        }
-        .customize button img{
-            margin: 10px;
-        }
-        
         .customize-pic{
             display: flex;
         }
@@ -492,7 +467,6 @@
             left: 50px;
             transform: scale(1);
             transition: .5s;
-            /* box-shadow: 3px 6px 4px #FDBE02; */
         }
         .customize-pic .box-r img:nth-child(2){
             position: relative;
@@ -521,8 +495,9 @@
 </head>
 <body>
     <div class="wrap">
+        <!-- navbar -->
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <a href="index.html" class="logo">
                     <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                 </a>
@@ -567,12 +542,13 @@
                 <button><a href="order.html">CHECKOUT</a></button>
             </div>
         </div> -->
+        <!-- banner-video -->
         <div class="banner">
             <video width="100%" height="655px" autoplay muted loop >
                 <source src="./banner/banner1.mp4" type="video/mp4">
             </video>
         </div> 
-        
+        <!-- brands-slide -->
     <section class="first-area">
         <div class="banner-brands">
             <ul class="brands">
@@ -598,6 +574,7 @@
                 <li class="items"><a href="skateboards.html"><img src="./Skate Bro/brands/10.png" alt=""></a></li>
             </ul>
         </div>
+        <!-- product -->
         <div class="main-content">
             <div class="products">
                 <div class="products-list">
@@ -736,6 +713,7 @@
                     </div>
                 </div>
             </div>
+            <!-- button -->
             <div class="btn-shop">
                 <button class="shop">
                     <a href="skateboards.html">SHOP NOW
@@ -745,6 +723,7 @@
             </div>
         </div>
     </section>
+    <!-- skate-img -->
     <section class="sec-area">
         <div class="skate-pic">
             <div class="hashtag">
@@ -763,6 +742,7 @@
             </div>
         </div>
     </section>
+    <!-- create-section -->
     <section class="third-area">
         <div class="main-content">
             <div class="customize">
@@ -783,6 +763,7 @@
             </div>
         </div>
     </section>
+        <!-- banner-end-gif -->
         <section class="main-footer">
             <div class="banner-end">
                 <img src="./Skate Bro/banner-end1.png" alt="">
@@ -792,6 +773,7 @@
                 </div>
                 <img src="./Skate Bro/banner-end1.png" alt="">
             </div>
+            <!-- footer -->
             <div class="footer-content">
                 <div class="footer-area">
                     <div class="footer-logo">
