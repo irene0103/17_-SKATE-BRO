@@ -16,8 +16,11 @@
             list-style: none;
             font-family: 'Aldrich', sans-serif;
         }
-        .main-header .member img, .main-header .cart img{
-            width: 55%;
+        .main-header .container-header .main-nav a:nth-child(4){
+            color: #952426;
+        }
+        .main-header .container-header .member img, .main-header .container-header .cart img{
+            width: 70%;
         }
         .main-content{
             max-width: 1200px;
@@ -122,48 +125,30 @@
             height: 500px;
         }
         @media screen and (max-width:768px){
-            .banner{
-                height: 400px;
-                width: 100%;
-                background-attachment: scroll;
-                background-size: contain;
-                padding-top: 80px;
-            }
-            .place {
-                padding-top: 0;
-                position: relative;
-                top: -80px;
-            }
-            label {
-                font-size: 16px;
-                padding: 10px 20px;
-            }
-            .panels img{
-                width: 100%;
-                height: auto;
-                margin: 0 auto;
-            }
-            .panel h2,.panel2 h2 {
-                font-size: 20px;
-                margin: 10px auto;
-            }
-            .panel p,.panel2 p{
-                margin: 10px auto;
-                font-size: 14px;
-            }
+            
         }
 
         
     </style>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="wrap">
         <!-- navbar -->
         <header class="main-header">
             <div class="container-header">
-                <a href="index.html" class="logo">
-                    <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
-                </a>
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                    <img src="./Skate Bro/logo.png" alt="SKATE BRO."></a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
@@ -171,12 +156,19 @@
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
+                <!-- 搜尋 -->
                 <form class="header-search">
-                    <button><img src="./Skate Bro/search.png" alt=""></button>
+                    <button><img src="./Skate Bro/search.png" alt="search"></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
-                <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
+                <!-- 會員 -->
+                <button class="member">
+                    <a href="login.html"><img src="./Skate Bro/member.png" alt="member"></a>
+                </button>
+                <!-- 購物車 -->
+                <button class="cart">
+                    <a href="order.html"><img src="./Skate Bro/shopping cart.png" alt="cart"></a>
+                </button>
             </div>
         </header>
         <!-- banner -->
@@ -204,14 +196,14 @@
                 <label for="three">South</label>
                 <div class="panels">
                     <div class="panel">
-                        <img src="./Place/1.jpg" alt="">
+                        <img src="./Place/22.png" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                             8：00 ~ 12：00<br>
                             13：00 ~ 17：00<br>
                             18：00 ~ 22：00<br></p>
                         <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/2.jpg" alt="">
+                        <img src="./Place/11.png" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                         8：00 ~ 12：00<br>
@@ -220,14 +212,14 @@
                         <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
                     </div>
                     <div class="panel2">
-                        <img src="./Place/3.jfif" alt="">
+                        <img src="./Place/33.jpg" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                             8：00 ~ 12：00<br>
                             13：00 ~ 17：00<br>
                             18：00 ~ 22：00<br></p>
                         <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/4.jpg" alt="">
+                        <img src="./Place/44.png" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                             8：00 ~ 12：00<br>
@@ -236,14 +228,14 @@
                         <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
                     </div>
                     <div class="panel2">
-                        <img src="./Place/5.jpg" alt="">
+                        <img src="./Place/44.png" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                             8：00 ~ 12：00<br>
                             13：00 ~ 17：00<br>
                             18：00 ~ 22：00<br></p>
                         <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/7.png" alt="">
+                        <img src="./Place/11.png" alt="picture">
                         <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
                         <p>Open hours：<br>
                             8：00 ~ 12：00<br>
@@ -264,7 +256,7 @@
             <div class="footer-content">
                 <div class="footer-area">
                     <div class="footer-logo">
-                        <img src="./Skate Bro/logo.png" alt="">
+                        <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                     </div>
                     <div class="footer-menu">
                         <div class="menu-list">
@@ -277,7 +269,7 @@
                         </div>
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
-                            <nav>
+                            <nav class="nav-skateboards">
                                 <a href="skateboards.html">Complete</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>

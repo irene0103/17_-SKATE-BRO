@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
+
+*{
+    font-family: 'Aldrich', sans-serif;
+}
+.main-content{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 200px;
+}
+.signup{
+    height: 750px;
+    margin: auto;
+}
+form{
+    width: 550px;
+    height: 600px;
+    margin: auto;
+    background-color: #FFDBD0;
+    border-radius: 10px;
+    box-shadow: 13px 13px 4px #F1B500;
+    font-family: 'Lato', sans-serif;
+}
+form h1{
+    text-align: center;
+    font-size: 50px;
+    color: #FFD5A5;
+    text-shadow: 5px 5px 0px #B02B2A;
+    background-color: #D26844;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    font-family: 'Aldrich', sans-serif;
+}
+.item{
+    display: flex;
+    margin: 30px;
+}
+.item label{
+    color: #D26844;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    width: 25%;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    text-align-last:right;
+    margin-right: 15px;
+    
+}
+.item input{
+    border: none;
+    width: 60%;
+    font-size: 20px;
+    background-color: #FFAC8F;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.item input:focus{
+    outline: none;
+}
+
+.policy{
+    display: flex;
+    margin: 50px;
+}
+.policy p{
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #D26844;
+    font-weight:bold;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+}
+.btn button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #304B3D;
+    background-color: #ECAF3A;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-family: 'Aldrich', sans-serif;
+    transition: .3s;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn button:hover{
+    transform: scale(1.05);
+}
+.btn button:active{
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+}
+/* 手機版 */
+@media screen and (max-width:767px){
+    .main-content{
+        max-width: auto;
+        padding-top: 170px;
+    }
+    .signup{
+        width: 100%;
+    }
+    form{
+        width: 80%;
+        height: 80%;
+    }
+    .item label{
+        font-size: 17px;
+        width: 25%;
+        margin-right: 15px;
+    }
+    .item input{
+        width: 70%;
+        font-size: 16px;
+        margin-left:10px;
+    }
+    .policy p{
+        margin-left: 30px;
+    }
+}

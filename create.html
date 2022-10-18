@@ -20,6 +20,9 @@
         :root {
             scroll-padding-top: 7rem;
         }
+        .main-header .container-header .main-nav a:nth-child(3){
+            color: #952426;
+        }
         .main-content{
             max-width: 1200px;
             margin: auto;
@@ -174,6 +177,9 @@
             border-radius: 50%;
             box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
         }
+        .color-list img:click{
+            outline: 5px solid #ECAF3A;
+        }
         form p{
             text-align: right;
         }
@@ -268,12 +274,23 @@
     </style>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="wrap">
+        <!-- navbar -->
         <header class="main-header">
             <div class="container-header">
-                <a href="index.html" class="logo">
-                    <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
-                </a>
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                    <img src="./Skate Bro/logo.png" alt="SKATE BRO."></a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
@@ -281,12 +298,19 @@
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
+                <!-- 搜尋 -->
                 <form class="header-search">
-                    <button><img src="./Skate Bro/search.png" alt=""></button>
+                    <button><img src="./Skate Bro/search.png" alt="search"></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
-                <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
+                <!-- 會員 -->
+                <button class="member">
+                    <a href="login.html"><img src="./Skate Bro/member.png" alt="member"></a>
+                </button>
+                <!-- 購物車 -->
+                <button class="cart">
+                    <a href="order.html"><img src="./Skate Bro/shopping cart.png" alt="cart"></a>
+                </button>
             </div>
         </header>
         <div class="main-content">
@@ -319,18 +343,18 @@
                         1. Choose the fav color
                         </div>
                         <div class="color-list">
-                            <a href="#img0"><img src="./pattern/888.png" alt=""></a>
-                            <a href="#img00"><img src="./pattern/777.png" alt=""></a>
-                            <a href="#img1"><img src="./pattern/1-1.png" alt=""></a>
-                            <a href="#img2"><img src="./pattern/2-1.png" alt=""></a>
-                            <a href="#img3"><img src="./pattern/3-1.png" alt=""></a>
-                            <a href="#img4"><img src="./pattern/4-1.png" alt=""></a>
-                            <a href="#img5"><img src="./pattern/5-1.png" alt=""></a>
-                            <a href="#img6"><img src="./pattern/8-1.png" alt=""></a>
-                            <a href="#img7"><img src="./pattern/9-1.png" alt=""></a>
-                            <a href="#img8"><img src="./pattern/10-1.png" alt=""></a>
-                            <a href="#img9"><img src="./pattern/11-1.png" alt=""></a>
-                            <a href="#img10"><img src="./pattern/12-1.png" alt=""></a>
+                            <a href="#img0"><img src="./pattern/888.png"></a>
+                            <a href="#img00"><img src="./pattern/777.png"></a>
+                            <a href="#img1"><img src="./pattern/1-1.png"></a>
+                            <a href="#img2"><img src="./pattern/2-1.png"></a>
+                            <a href="#img3"><img src="./pattern/3-1.png"></a>
+                            <a href="#img4"><img src="./pattern/4-1.png"></a>
+                            <a href="#img5"><img src="./pattern/5-1.png"></a>
+                            <a href="#img6"><img src="./pattern/8-1.png"></a>
+                            <a href="#img7"><img src="./pattern/9-1.png"></a>
+                            <a href="#img8"><img src="./pattern/10-1.png"></a>
+                            <a href="#img9"><img src="./pattern/11-1.png"></a>
+                            <a href="#img10"><img src="./pattern/12-1.png"></a>
                         </div>
                     </div>
                     <div class="title">
@@ -353,15 +377,15 @@
                 <p>Find the inspiration...</p>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href=""><img src="./pattern/3-removebg-preview.png" alt=""></a>RAINBOW</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/9-removebg-preview.png" alt=""></a>GUMMI LOVE</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/5-removebg-preview.png" alt=""></a>SUN</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/8-removebg-preview.png" alt=""></a>AVOCADO</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/1-removebg-preview.png" alt=""></a>TOY MACHINE</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/4-removebg-preview.png" alt=""></a>GUMMY BEARS</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/7-removebg-preview.png" alt=""></a>PATTERN</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/10-removebg-preview.png" alt=""></a>CARPET</div>
-                        <div class="swiper-slide"><a href=""><img src="./pattern/6-removebg-preview.png" alt=""></a>ROSE</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/3-removebg-preview.png" alt="product"></a>RAINBOW</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/9-removebg-preview.png" alt="product"></a>GUMMI LOVE</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/5-removebg-preview.png" alt="product"></a>SUN</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/8-removebg-preview.png" alt="product"></a>AVOCADO</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/1-removebg-preview.png" alt="product"></a>TOY MACHINE</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/4-removebg-preview.png" alt="product"></a>GUMMY BEARS</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/7-removebg-preview.png" alt="product"></a>PATTERN</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/10-removebg-preview.png" alt="product"></a>CARPET</div>
+                        <div class="swiper-slide"><a href=""><img src="./pattern/6-removebg-preview.png" alt="product"></a>ROSE</div>
                     </div>
                 </div>
                     <div class="swiper-button-next"></div>
@@ -373,7 +397,7 @@
             <div class="footer-content">
                 <div class="footer-area">
                     <div class="footer-logo">
-                        <img src="./Skate Bro/logo.png" alt="">
+                        <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                     </div>
                     <div class="footer-menu">
                         <div class="menu-list">
@@ -386,7 +410,7 @@
                         </div>
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
-                            <nav>
+                            <nav class="nav-skateboards">
                                 <a href="skateboards.html">Completes</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>

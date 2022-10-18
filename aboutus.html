@@ -7,140 +7,28 @@
     <title>About us | SKATE BRO.</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
+    <link rel="stylesheet" href="aboutus.css">
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
-        *{
-            list-style: none;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .banner{
-            width: 100%;
-            padding-top: 120px;
-        }
-        .banner img{
-            width: 100%;
-        }
-        .main-content{
-            max-width: 1200px;
-            margin: auto;
-        }
-        .content1,.content2,.content3{
-            display: flex;
-            font-family: 'Lato', sans-serif;
-        }
-        .content1 img{
-            width: 500px;
-            height: 650px;
-            position: relative;
-            bottom: 30px;
-        }
-        .content1 .textarea1{
-            margin: 30px;
-        }
-        .content1 .textarea1 h1{
-            font-size: 80px;
-            font-weight: bold;
-            color: #ECAF3A;
-            position: relative;
-            right: 60px;
-            top: 20px;
-            font-family: 'Lato', sans-serif;
-        }
-        .content1 .textarea1 p,.content2 .textarea2 p,.textarea3 p{
-            font-size: 20px;
-            color: rgb(137, 101, 25);
-            margin: 110px 40px 20px 30px;
-            line-height: 30px;
-            font-family: 'Lato', sans-serif;
-        }
-        .content2 .textarea2 p{
-            margin: 50px;
-        }
-        .content3 p{
-            margin: 90px;
-        }
-        .content2 img{
-            width: 500px;
-            height: 650px;
-            position: relative;
-            bottom: 90px;
-        }
-        .content2 .textarea2 h2{
-            font-size: 45px;
-            text-align: center;
-            color: #ECAF3A;
-            margin: 60px 0 0 0;
-            font-family: 'Lato', sans-serif;
-        }
-        
-        .content3 img{
-            width: 400px;
-            height: 450px;
-            position: relative;
-            bottom: 150px;
-            left: 30px;
-        }
-        .content3-title h3{
-            font-size: 60px;
-            width: 550px;
-            transform: rotate(270deg);
-            position: relative;
-            right: 260px;
-            bottom: 300px;
-            color: #ECAF3A;
-        }
-        @media screen and (max-width:768px){
-            .content1,.content2,.content3{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .content1 img{
-                width: 90%;
-                height: auto;
-                margin: 50px 25px 0 25px;
-            }
-            .content1 .textarea1 h1{
-                font-size: 50px;
-                margin: 0 0 30px 90px;
-            }
-            .content1 .textarea1 p{
-                margin: 30px;
-            }
-            .content2 img,.content3 img{
-                width: 90%;
-                height: auto;
-                bottom: 0;
-                left: 0;
-                margin: 0 25px 20px 25px;
-            }
-            .content2 .textarea2 h2{
-                text-align: left;
-                margin: 80px 60px 0 60px;
-            }
-           
-            .content2 .textarea2 p{
-                margin: 10px 60px 80px 60px;
-            }
-            
-            .content3 .textarea3 p{
-                margin: 20px 80px 0 80px;
-            }
-
-        }
-    </style>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="wrap">
         <!-- navbar -->
         <header class="main-header">
             <div class="container-header">
-                <a href="index.html" class="logo">
-                    <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
-                </a>
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                    <img src="./Skate Bro/logo.png" alt="SKATE BRO."></a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
@@ -148,12 +36,19 @@
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
+                <!-- 搜尋 -->
                 <form class="header-search">
-                    <button><img src="./Skate Bro/search.png" alt=""></button>
+                    <button><img src="./Skate Bro/search.png" alt="search"></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
-                <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
+                <!-- 會員 -->
+                <button class="member">
+                    <a href="login.html"><img src="./Skate Bro/member.png" alt="member"></a>
+                </button>
+                <!-- 購物車 -->
+                <button class="cart">
+                    <a href="order.html"><img src="./Skate Bro/shopping cart.png" alt="cart"></a>
+                </button>
             </div>
         </header>
         <!-- banner -->
@@ -161,7 +56,7 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="banner">
-                        <img src="./About us/banner111.jpg" alt="">
+                        <img src="./About us/banner111.jpg" alt="banner">
                     </div>
                 </div>
             </div>
@@ -172,51 +67,38 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="main-content">
+                        <!-- content1 -->
                         <div class="row">
                             <div class="content1">
-                                <div class="col-12 col-md-6">
-                                    <div data-aos="fade-right">
-                                        <img src="./About us/content1.png" alt="">
-                                    </div>
+                                <div class="col-12 col-md-6" data-aos="fade-right">
+                                    <img src="./About us/content1.png" alt="picture">
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="textarea1">
-                                        <div data-aos="zoom-in-left">
-                                            <h1>Skate For Life</h1>
-                                            <p>Bringing together the best of skate culture and street fashion, Route One has been kitting out skaters for over three decades. From seasoned pros to park first-timers, we’re about perfect setups, support and style – for everyone.</p>
-                                        </div>
-                                    </div>
+                                <div class="col-12 col-md-6 textarea1" data-aos="zoom-in-left">
+                                    <h1>Skate For Life</h1>
+                                    <p>Bringing together the best of skate culture and street fashion, Route One has been kitting out skaters for over three decades. From seasoned pros to park first-timers, we’re about perfect setups, support and style – for everyone.</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- content2 -->
                         <div class="row">
                             <div class="content2">
-                                <div class="col-12 col-md-6">
-                                    <div data-aos="fade-right">
-                                        <div class="textarea2">
-                                            <h2>Our Story</h2>
-                                            <p>In 1989, two friends bailed on London life and headed West. Dodging burn out, and ready to make a living doing something they loved, they set up a warehouse in a terraced house in Bristol, and started distributing action sports kit.</p>
-                                        </div>
-                                    </div>
+                                <div class="col-12 col-md-6 textarea2" data-aos="fade-right">
+                                    <h2>Our Story</h2>
+                                    <p>In 1989, two friends bailed on London life and headed West. Dodging burn out, and ready to make a living doing something they loved, they set up a warehouse in a terraced house in Bristol, and started distributing action sports kit.</p>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div data-aos="zoom-in-left">
-                                        <img src="./About us/content2.jfif" alt="">
-                                    </div>
+                                <div class="col-12 col-md-6" data-aos="zoom-in-left">
+                                    <img src="./About us/content2.png" alt="picture">
                                 </div>
                             </div>
                         </div>
+                        <!-- content3 -->
                         <div class="row">
-                            <div data-aos="zoom-in-right">
-                                <div class="content3">
-                                    <div class="col-12 col-md-6">
-                                        <img src="./About us/content4.jfif" alt="">
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="textarea3">
-                                            <p>Before too long (and after a few false starts) they opened the doors to the first Route One store. Over 30 years and six more stores later, we’ve helped tens of thousands of people dress, feel and skate better.</p>
-                                        </div>
-                                    </div>
+                            <div class="content3" data-aos="zoom-in-right">
+                                <div class="col-12 col-md-6">
+                                    <img src="./About us/content4.jfif" alt="picture">
+                                </div>
+                                <div class="col-12 col-md-6 textarea3">            
+                                    <p>Before too long (and after a few false starts) they opened the doors to the first Route One store. Over 30 years and six more stores later, we’ve helped tens of thousands of people dress, feel and skate better.</p>
                                 </div>
                             </div>
                         </div>
@@ -232,9 +114,11 @@
         <div class="main-footer">
             <div class="footer-content">
                 <div class="footer-area">
+                    <!-- logo -->
                     <div class="footer-logo">
-                        <img src="./Skate Bro/logo.png" alt="">
+                        <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                     </div>
+                    <!-- footer-menu -->
                     <div class="footer-menu">
                         <div class="menu-list">
                             <h3>Follow Us</h3>
@@ -246,7 +130,7 @@
                         </div>
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
-                            <nav>
+                            <nav class="nav-skateboards">
                                 <a href="skateboards.html">Completes</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>
@@ -273,6 +157,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- copyright -->
                 <div class="copyright">
                     2022 ©SKATE BRO. │ All Rights Reserved.
                 </div>

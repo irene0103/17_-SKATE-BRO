@@ -7,129 +7,27 @@
     <title>Login | SKATE BRO.</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
-        *{
-            font-family: 'Aldrich', sans-serif;
-        }
-        .main-content{
-            max-width: 1200px;
-            margin: auto;
-            padding-top: 200px;
-        }
-        .login{
-            width: 730px;
-            height: 700px;
-            margin: auto;
-            /* padding-top: 200px; */
-        }
-        form{
-            width: 650px;
-            height: 530px;
-            margin: auto;
-            background-color: #FFDBD0;
-            border-radius: 10px;
-            box-shadow: 13px 13px 4px #F1B500;
-            font-family: 'Lato', sans-serif;
-        }
-        form h1{
-            text-align: center;
-            font-size: 50px;
-            color: #FFD5A5;
-            text-shadow: 5px 5px 0px #B02B2A;
-            background-color: #D26844;
-            border-radius: 10px 10px 0 0;
-            padding: 15px;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .item{
-            display: flex;
-            margin: 30px;
-        }
-        .item label{
-            color: #D26844;
-            font-size: 25px;
-            line-height: 40px;
-            font-weight: bold;
-            width: 180px;
-            display: inline-block;
-            text-align: center;
-            text-align-last:right;
-            font-family: 'Lato', sans-serif;
-        }
-        .item input{
-            border: none;
-            width: 300px;
-            font-size: 20px;
-            background-color: #FFAC8F;
-            border-radius: 20px;
-            margin: 0 30px;
-        }
-        .item input:focus{
-            outline: none;
-        }
-        .fpw a, .su a{
-            text-decoration: none;
-            color: #D26844;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: 'Lato', sans-serif;
-        }
-        .fpw, .su{
-            text-align: right;
-            margin: 5px 20px;
-        }
-        .btn{
-            width: 100%;
-            text-align: center;
-        }
-        .btn button{
-            background: transparent;
-            border: none;
-            font-size: 20px;
-            color: #304B3D;
-            background-color: #ECAF3A;
-            border-radius: 100px;
-            font-weight: bold;
-            padding: 10px 40px;
-            cursor: pointer;
-            font-family: 'Aldrich', sans-serif;
-            transition: .3s;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        .btn button:hover{
-            transform: scale(1.05);
-        }
-        .btn button:active{
-            transform: scale(1);
-            box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
-        }
-        form p{
-            color: #D26844;
-            font-size: 20px;
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Lato', sans-serif;
-        }
-        .social{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .social img{
-            margin: 20px 25px;
-        }
-    </style>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="wrap">
+        <!-- navbar -->
         <header class="main-header">
             <div class="container-header">
-                <a href="index.html" class="logo">
-                    <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
-                </a>
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                    <img src="./Skate Bro/logo.png" alt="SKATE BRO."></a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
@@ -137,12 +35,19 @@
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
+                <!-- 搜尋 -->
                 <form class="header-search">
-                    <button><img src="./Skate Bro/search.png" alt=""></button>
+                    <button><img src="./Skate Bro/search.png" alt="search"></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></a></button>
-                <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
+                <!-- 會員 -->
+                <button class="member">
+                    <a href="login.html"><img src="./Skate Bro/member.png" alt="member"></a>
+                </button>
+                <!-- 購物車 -->
+                <button class="cart">
+                    <a href="order.html"><img src="./Skate Bro/shopping cart.png" alt="cart"></a>
+                </button>
             </div>
         </header>
         <div class="main-content">
@@ -150,7 +55,7 @@
                 <form>
                     <h1>LOG IN</h1>
                     <div class="item">
-                        <label for="email">Email Address</label>
+                        <label for="email">Email</label>
                         <input type="email" name="" id="Email Address">
                     </div>
                     <div class="item">
@@ -178,7 +83,7 @@
             <div class="footer-content">
                 <div class="footer-area">
                     <div class="footer-logo">
-                        <img src="./Skate Bro/logo.png" alt="">
+                        <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                     </div>
                     <div class="footer-menu">
                         <div class="menu-list">
@@ -191,7 +96,7 @@
                         </div>
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
-                            <nav>
+                            <nav class="nav-skateboards">
                                 <a href="skateboards.html">Complete</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>

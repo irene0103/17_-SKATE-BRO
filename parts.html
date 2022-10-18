@@ -15,10 +15,13 @@
             list-style: none;
             font-family: 'Aldrich', sans-serif;
         }
+        .main-header .container-header .main-nav a:nth-child(2){
+            color: #952426;
+        }
         .main-content{
             max-width: 1200px;
             margin: auto;
-            padding-top: 180px;
+            padding-top: 200px;
             position: relative;
             display: flex;
         }
@@ -181,13 +184,23 @@
     </style>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="wrap">
         <!-- navbar -->
         <header class="main-header">
             <div class="container-header">
-                <a href="index.html" class="logo">
-                    <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
-                </a>
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                    <img src="./Skate Bro/logo.png" alt="SKATE BRO."></a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
                 <nav class="main-nav">
                     <a href="skateboards.html">Skateboards</a>
                     <a href="parts.html">Parts</a>
@@ -195,12 +208,19 @@
                     <a href="wheretoskate.html">Where to skate</a>
                     <a href="aboutus.html">About us</a>
                 </nav>
+                <!-- 搜尋 -->
                 <form class="header-search">
-                    <button><img src="./Skate Bro/search.png" alt=""></button>
+                    <button><img src="./Skate Bro/search.png" alt="search"></button>
                     <input type="search" placeholder="Search">
                 </form>
-                <button class="member"><a href="login.html"><img src="./Skate Bro/member.png" alt=""></button></a>
-                <button class="cart"><a href="order.html"><img src="./Skate Bro/shopping cart.png" alt=""></a></button>
+                <!-- 會員 -->
+                <button class="member">
+                    <a href="login.html"><img src="./Skate Bro/member.png" alt="member"></a>
+                </button>
+                <!-- 購物車 -->
+                <button class="cart">
+                    <a href="order.html"><img src="./Skate Bro/shopping cart.png" alt="cart"></a>
+                </button>
             </div>
         </header>
         <!-- side-menu -->
@@ -227,11 +247,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/1.png" alt="">
+                            <img src="./Wheels/1.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -242,11 +262,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/2.png" alt="">
+                            <img src="./Wheels/2.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -257,11 +277,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/3.png" alt="">
+                            <img src="./Wheels/3.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -272,11 +292,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/4.png" alt="">
+                            <img src="./Wheels/4.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -287,11 +307,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/5.png" alt="">
+                            <img src="./Wheels/5.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -302,11 +322,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/6.png" alt="">
+                            <img src="./Wheels/6.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -317,11 +337,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/7.png" alt="">
+                            <img src="./Wheels/7.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -332,11 +352,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/8.png" alt="">
+                            <img src="./Wheels/8.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -347,11 +367,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/9.png" alt="">
+                            <img src="./Wheels/9.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -362,11 +382,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/10.png" alt="">
+                            <img src="./Wheels/10.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -377,11 +397,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/11.png" alt="">
+                            <img src="./Wheels/11.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -392,11 +412,11 @@
                 <div class="wheels-list">
                     <div class="wheels-item">
                         <div class="wheels-check">
-                            <a href=""><img src="./Skate Bro/search-1.png" alt="">
-                            <img src="./Skate Bro/cart-1.png" alt=""></a>
+                            <a href=""><img src="./Skate Bro/search-1.png" alt="search">
+                            <img src="./Skate Bro/cart-1.png" alt="cart"></a>
                         </div>
                         <div class="wheels-pic">
-                            <img src="./Wheels/12.png" alt="">
+                            <img src="./Wheels/12.png" alt="wheels">
                         </div>
                     </div>
                     <div class="wheels-content">
@@ -425,7 +445,7 @@
             <div class="footer-content">
                 <div class="footer-area">
                     <div class="footer-logo">
-                        <img src="./Skate Bro/logo.png" alt="">
+                        <img src="./Skate Bro/logo.png" alt="SKATE BRO.">
                     </div>
                     <div class="footer-menu">
                         <div class="menu-list">
@@ -438,7 +458,7 @@
                         </div>
                         <div class="menu-list">
                             <h3><a href="skateboards.html">Skateboards</a></h3>
-                            <nav>
+                            <nav class="nav-skateboards">
                                 <a href="skateboards.html">Completes</a>
                                 <a href="skateboards.html">Cruiser</a>
                                 <a href="skateboards.html">Longboards</a>
