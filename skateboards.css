@@ -47,7 +47,6 @@ nav a p::after{
     transition: .5s;
 }
 .breadcrumb{
-    width: 100%;
     margin: 10px 30px;
     padding-top: 15px;
 }
@@ -81,7 +80,6 @@ nav a p::after{
 .skateboards-list{
     width: 80%;
     height: 90%;
-    margin: 10px;
     position: relative;
 }
 .skateboards-pic{
@@ -92,6 +90,12 @@ nav a p::after{
     border: 4px solid #CD572F;
     border-radius: 15px;
     box-shadow: 8px 8px #F1B500;
+    transform: translate(0,0);
+    transition: all .2s cubic-bezier(.15,.62,.43,.8);
+}
+.skateboards-pic:hover{
+    box-shadow:0 0;
+    transform:translate(3px,3px);
 }
 .skateboards-pic img{
     width: 100%;
@@ -106,43 +110,11 @@ nav a p::after{
     line-height: 1.3;
     letter-spacing: 1.5px;
 }
-.skateboards-check{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffffbd;
-    border-radius: 0 0 15px 15px;
-    position: absolute;
-    opacity: 0;
-    z-index: 2;
-    transition: .7s;
-}
-.skateboards-check a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.skateboards-check img{
-    width: 15%;
-    height: 15%;
-    margin: 0 15px;
-    transition: .5s;
-}
-.skateboards-check img:hover{
-    transform: scale(1.09);
-    transition: .5s;
-}
 
-.skateboards-item:hover .skateboards-check{
-    opacity: 1;
-    transition: .7s;
-}
 .skateboards-list:hover p{
     color: #b74f2c;
 }
 .page{
-    width: 100%;
     height: 30px;
     text-align: center;
     display: inline-block;
@@ -170,9 +142,6 @@ nav a p::after{
 
 /* 手機版 */
 @media screen and (max-width:767px){
-    .wrap{
-        overflow: hidden;
-    }
     .main-content{
         max-width: 100%;
         padding-top: 130px;
@@ -184,12 +153,6 @@ nav a p::after{
     .skateboards-list{
         width: 80%;
         margin: 15px 20px;
-    }
-    .skateboards-check{
-        width: 92%;
-        height: 25%;
-        margin-left: 5px;
-        bottom: 57px;
     }
     
 }
@@ -215,18 +178,6 @@ nav a p::after{
     .skateboards-pic img{
         width: 100%;
         height: 100%;
-    }
-
-    .skateboards-check{
-        width: 95%;
-        margin-left: 4px;
-        bottom: 69px;
-    }
-    .skateboards-check img{
-        width: 15%;
-        height: 15%;
-        margin: 20px;
-        transition: .5s;
     }
     
 }

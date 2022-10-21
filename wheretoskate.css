@@ -8,7 +8,7 @@
     color: #952426;
 }
 .main-content{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
 }
 .banner{
@@ -22,9 +22,7 @@
 }
 .tabs {
     width: 100%;
-    height: 100%;
-    margin: 50px 20px;
-    text-align: center;
+    margin: 50px 15px;
 }
 
 .menu {
@@ -39,15 +37,15 @@
     border-radius: 7px 7px 0 0;
     padding: 1.5% 6%;
     float: left;
-    border-right: 3px solid #CD572F;
+    border-right: 3px solid #D56534;
 }
 
 .lable-menu:hover {
-    background: #ffb937;
+    background: #E98033;
 }
 
 .menu:checked + .lable-menu {
-    background: #f8cdbe;
+    background: #eec26b;
     color: #CD572F;
 }
 
@@ -70,12 +68,12 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #f8cdbe;
+    background: #eec26b;
     position: relative;
     margin: auto;
     text-align: center;
     border-radius: 0 10px 10px 10px;
-    box-shadow: 7px 6px 0px #CC562F;
+    box-shadow: 7px 6px 0px #D56534;
     padding: 4%;
     box-sizing: border-box;
 }
@@ -83,45 +81,58 @@
     position: absolute;
     top: 0;
 }
-
-.panel img,.panel2 img{
+.bcg-net{
+    background: url(./Place/net.png) center no-repeat;
+    background-size: cover;
     width: 100%;
-    margin: 10px 0;
+    height: 100%;
+}
+.panel .bcg-net img,.panel2 .bcg-net img{
+    width: 95%;
+    height: 100%;
+    margin: 15px 10px;
 }
 
 .panel h2,.panel2 h2 {
     text-align: left;
     font-size: 19px;
-    margin: 5px 0;
+    width: 65%;
+    padding: 20px 0;
+    border-bottom: 3px double #D56534;
     font-family: 'Lato', sans-serif;
     line-height: 20px;
     font-weight: bold;
-    color: #994c4c;
+    color: #af5916;
 
 }
 .panel p,.panel2 p{
     text-align: left;
     font-size: 15px;
-    margin: 5px 0;
+    margin: 5px 0 25px 0;
     font-family: 'Lato', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
     font-weight: bold;
-    color: #cd3d0d;
+    color: #555454;
 }
 /* 桌機版 */
 @media screen and (min-width:768px){
+    .main-content{
+        max-width: 1200px;
+        margin: auto;
+    }
     .tabs {
-        margin: 80px auto;
+        margin:50px 60px;
     }
     .lable-menu {
         padding: 1% 4%;
         font-size: 20px;
     }
     .panel h2,.panel2 h2 {
-        font-size: 25px;
+        font-size: 30px;
+        width: 43%
     }
     .panel p,.panel2 p{
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
     }
 }
