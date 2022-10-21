@@ -7,6 +7,7 @@
     <title>Products | SKATE BRO.</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
+    <link rel="stylesheet" href="grid-th.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
 
@@ -87,8 +88,9 @@
         }
 
         .product-btn ,.btn-end{
+            width: 100%;
             display: flex;
-            margin: 50px 0;
+            margin: 50px auto;
             justify-content: center;
         }
         .addtocart,.backtotop{
@@ -170,6 +172,8 @@
         .product-like p{
             font-size: 25px;
             margin: 40px 0 10px 0;
+            padding-left: 20px;
+            outline: 1px solid red;
         }
         .swiper {
             display: flex;
@@ -217,6 +221,80 @@
             color: #ECAF3A;
             padding: 0 20px;
         }
+        /* 手機版 */
+        @media screen and (max-width:767px){
+            .swiper {
+                width: 50%;
+                margin-left: 0;
+                padding: 0;
+            }
+            .swiper-slide {
+                font-size: 15px;
+            }
+            .swiper-slide a img {
+                width: 100%;
+                height: 200px;
+            }
+            .swiper-button-next, .swiper-button-prev{
+                display: none;
+            }
+            .product{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                background-color: #fff;
+            }
+            .product-pic{
+                width: 100%;
+                height: auto;
+                padding: 20px 0;
+                margin: auto;
+            }
+            .product-pic img{
+                width: 300px;
+                height: auto;
+            }
+            .product-detail{
+                width: 100%;
+                height: 100%;
+            }
+            .product-detail h1{
+                font-size: 28px;
+            }
+            .product-intro1,.product-intro2{
+                display: inline-block;
+            }
+            .product-intro1 .intro-content img{
+                width: 60%;
+                padding-left:0px;
+                height: auto;
+                margin-top: -50px;
+            }
+            .size{
+                background-color: #F8DC87;
+                font-weight: bold; 
+                padding: 20px 0 20px 70px;
+                height: auto;
+                width: 100%;
+            }
+            .product-intro .intro-content{
+                width: 100%;
+                padding: 0px 20px;
+            }
+            .product-intro2 .intro-content{
+                width: 100%;
+                margin: 0;
+                padding: 20px 40px;
+            }
+            
+            
+        }
+        /* 電腦版 */
+        @media screen and (min-width:768px){
+
+
+        }
+
     </style>
 </head>
 <body>
@@ -327,25 +405,27 @@
              <!-- Swiper -->
             <div class="product-like">
                 <p>You may also like...</p>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href=""><img src="./products/1.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/2.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/3.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/4.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/5.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/6.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/7.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/8.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
-                        <div class="swiper-slide"><a href=""><img src="./products/9.png" alt="products"></a>SKATEDELUXE EXPLOSION</div>
+                <div class="container">
+                <div class="swiper mySwiper row">
+                    <div class="swiper-wrapper col-12 col-md-12">
+                        <div class="swiper-slide"><a href=""><img src="./products/1.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/2.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/3.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/4.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/5.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/6.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/7.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/8.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
+                        <div class="swiper-slide"><a href=""><img src="./products/9.png" alt="products"></a>SKATEDELUXE <br> EXPLOSION</div>
                     </div>
                 </div>
+            </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="btn-end">
-                        <button class="backtotop">
-                            <a href="products.html">Top</a>
-                    </div>
+            </div>
+            <div class="btn-end">
+                <button class="backtotop">
+                    <a href="products.html">Top</a>
             </div>
         </div>
         <!-- footer -->
@@ -408,7 +488,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        spaceBetween: 90,
+        spaceBetween: 40,
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,

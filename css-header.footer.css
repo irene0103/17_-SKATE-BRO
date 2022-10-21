@@ -6,8 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: #F9EFD7;
-    margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #menu-switch{
     display: none;
@@ -20,7 +19,7 @@
     z-index: 50;
 }
 .main-header .container-header{
-    width: 1200px;
+    /* width: 1200px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,6 +112,7 @@
     width: 35px;
     height: 35px;
     padding: 0 10px;
+    cursor: pointer;
 }
 .menu-list h3 a, h3{
     text-decoration: none;
@@ -146,15 +146,18 @@
 /* 手機版 */
 @media screen and (max-width:767px){
     /* navbar */
+    .main-header .container-header{
+        width: 100%;
+    }
     .main-header .container-header .main-nav{
         width: 100%;
         height: 320px;
         padding-top: 20px;
         background-color: #ecae3ad3;
         position: absolute;
+        transition: .7s;
         top: 100px;
         left: -100%;
-        transition: .7s;
         z-index: 10;
     }
     .main-header .container-header .main-nav a::after{
@@ -168,7 +171,7 @@
         height: 30px;
         display: flex;
         flex-direction: column;
-        outline: 2px solid #000;
+        border: 2px solid #000;
         border-radius: 20%;
         justify-content: space-evenly;
         align-items: center;
@@ -186,6 +189,7 @@
         opacity: 1;
     }
     #menu-switch:checked + .wrap .main-header .container-header .main-nav {
+        transition: .7s;
         left: 0;
     }
     .main-header .container-header .menu_btn span:nth-child(1){

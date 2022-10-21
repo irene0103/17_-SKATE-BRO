@@ -56,6 +56,7 @@ form h1{
     background-color: #FFAC8F;
     border-radius: 20px;
     margin-left: 15px;
+    padding-left: 20px;
 }
 .item input:focus{
     outline: none;

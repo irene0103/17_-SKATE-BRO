@@ -9,20 +9,19 @@
     margin: auto;
     padding-top: 200px;
 }
-
-.login{
-    width: 730px;
-    height: 700px;
+.signup{
+    height: 750px;
     margin: auto;
 }
 form{
-    width: 80%;
-    height: 75%;
+    width: 550px;
+    height: 600px;
     margin: auto;
     background-color: #FFDBD0;
     border-radius: 10px;
     box-shadow: 13px 13px 4px #F1B500;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 100px;
 }
 form h1{
     text-align: center;
@@ -43,7 +42,7 @@ form h1{
     font-size: 25px;
     line-height: 40px;
     font-weight: bold;
-    width: 30%;
+    width: 25%;
     display: inline-block;
     text-align: center;
     text-align-last:right;
@@ -51,11 +50,13 @@ form h1{
 }
 .item input{
     border: none;
-    width: 70%;
+    width: 60%;
     font-size: 20px;
     background-color: #FFAC8F;
     border-radius: 20px;
-    margin: 0 30px;
+    margin-left: 15px;
+    padding-left: 20px;
+    font-family: 'Lato', sans-serif;
 }
 .item input:focus{
     outline: none;
@@ -121,17 +122,18 @@ form p{
         width: 100%;
     }
     form{
-        width: 85%;
-        height: 75%;
+        width: 80%;
+        height: 80%;
     }
     .item label{
         font-size: 17px;
-        width: 30%;
+        width: 25%;
+        margin-right: 15px;
     }
     .item input{
         width: 70%;
         font-size: 16px;
-        margin-left:15px;
+        margin-left:10px;
     }
     .fpw,.su{
         padding-bottom: 10px;

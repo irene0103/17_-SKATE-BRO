@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
+*{
+    list-style: none;
+    font-family: 'Aldrich', sans-serif;
+}
+.main-header .container-header .main-nav a:first-child{
+    color: #952426;
+}
+.main-content{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 180px;
+    position: relative;
+    display: flex;
+}
+.side-menu{
+    width: 250px;
+    height: 520px;
+    background-color: #EEB74E;
+    box-shadow: 7px 6px 0px #CC562F;
+    border-radius: 0px 17px 17px 0px;
+    margin: 10px 20px 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 125px;
+}
+.menu a{
+    display: flex;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+nav a p{
+    font-weight: bold;
+    font-size: 21px;
+    padding-top: 25px;
+}
+nav a p::after{
+    content: '+';
+    padding: 0 5px;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+.breadcrumb{
+    width: 100%;
+    margin: 10px 30px;
+    padding-top: 15px;
+}
+.breadcrumb ol{
+    display: flex;
+}
+.breadcrumb li + li::before{
+    content: '>';
+    color: #000000;
+    padding: 0 20px;
+}
+.breadcrumb li:last-child a{
+    background-color: #EEB74E;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.breadcrumb li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.skateboards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+}
+.skateboards-list{
+    width: 80%;
+    height: 90%;
+    margin: 10px;
+    position: relative;
+}
+.skateboards-pic{
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    background-color: #f8d3c3;
+    border: 4px solid #CD572F;
+    border-radius: 15px;
+    box-shadow: 8px 8px #F1B500;
+}
+.skateboards-pic img{
+    width: 100%;
+    height: 200px;
+}
+.skateboards-content p{
+    width: 100%;
+    text-align: center;
+    margin-top: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+}
+.skateboards-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffbd;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    transition: .7s;
+}
+.skateboards-check a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skateboards-check img{
+    width: 15%;
+    height: 15%;
+    margin: 0 15px;
+    transition: .5s;
+}
+.skateboards-check img:hover{
+    transform: scale(1.09);
+    transition: .5s;
+}
+
+.skateboards-item:hover .skateboards-check{
+    opacity: 1;
+    transition: .7s;
+}
+.skateboards-list:hover p{
+    color: #b74f2c;
+}
+.page{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 50px;
+}
+.page ul{
+    display: flex;
+}
+.page li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+.page li .active{
+    background-color: #F1B500;
+    color: white;
+    border-radius: 5px;
+}
+.page li a:hover{
+    background-color: #F1B500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* 手機版 */
+@media screen and (max-width:767px){
+    .wrap{
+        overflow: hidden;
+    }
+    .main-content{
+        max-width: 100%;
+        padding-top: 130px;
+    }
+    
+    .side-menu{
+        display: none;
+    }
+    .skateboards-list{
+        width: 80%;
+        margin: 15px 20px;
+    }
+    .skateboards-check{
+        width: 92%;
+        height: 25%;
+        margin-left: 5px;
+        bottom: 57px;
+    }
+    
+}
+
+/* 電腦版 */
+@media screen and (min-width:768px){
+    .skateboards{
+        width: 950px;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .page{
+        margin: 30px 280px;
+    }
+    .skateboards-list{
+        width: 80%;
+        margin: 25px;
+        position: relative;
+    }
+    .skateboards-pic{
+        width: 160px;
+        height: 250px;
+    }
+    .skateboards-pic img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .skateboards-check{
+        width: 95%;
+        margin-left: 4px;
+        bottom: 69px;
+    }
+    .skateboards-check img{
+        width: 15%;
+        height: 15%;
+        margin: 20px;
+        transition: .5s;
+    }
+    
+}

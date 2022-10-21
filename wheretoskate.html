@@ -7,129 +7,9 @@
     <title>Where to skate | SKATE BRO.</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
-    <link rel="stylesheet" href="grid-th.css">
+    <link rel="stylesheet" href="wheretoskate.css">
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
-        *{
-            list-style: none;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .main-header .container-header .main-nav a:nth-child(4){
-            color: #952426;
-        }
-        .main-header .container-header .member img, .main-header .container-header .cart img{
-            width: 70%;
-        }
-        .main-content{
-            max-width: 1200px;
-            margin: auto;
-        }
-        
-        .banner{
-            background: url(./Place/banner.jpg) center no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            max-width: 100%;
-            height: 700px;
-            padding-top: 100px;
-        }
-
-        .place {
-            width: 100%;
-            height: 100%;
-            margin: auto;
-            padding: 50px 0;
-	    }
-		.area {
-			opacity: 0;
-		}
-		label {
-			cursor: pointer;
-			background: #ecae3a41;
-			color: black;
-            font-weight: bold;
-            font-size: 20px;
-			border-radius: 5px 5px 0 0;
-			padding: 13px 50px;
-			float: left;
-            border-right: 3px solid #CD572F;
-            font-family: 'Lato', sans-serif;
-		}
-		label:hover {
-			background:#ECAF3A;
-		}
-
-		.area:checked + label {
-			background: #ECAF3A;
-			color: #333;
-		}
-
-		.place .area:nth-of-type(1):checked ~ .panels .panel:first-child,
-		.place .area:nth-of-type(2):checked ~ .panels .panel2:nth-child(2),
-		.place .area:nth-of-type(3):checked ~ .panels .panel2:nth-child(3),
-		.place .area:nth-of-type(4):checked ~ .panels .panel2:last-child {
-			opacity: 1;
-		}
-
-		.panels {
-			clear: both;
-            height: 100%;
-            width: 100%;
-			border-radius: 0 10px 10px 10px;
-            position: relative;
-		}
-
-        .panel,.panel2 {
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            border-radius: 0 10px 10px 10px;
-            padding: 0 30px 20px 30px;
-            box-sizing: border-box;
-			background: #ecae3a41;
-            margin: auto;
-            text-align: center;
-            position: relative;
-        }
-        .panel2 {
-            position: absolute;
-            top: 0;
-        }
-
-        .panel h2,.panel2 h2 {
-            margin: 10px 60px;
-            font-size: 25px;
-            font-family: 'Lato', sans-serif;
-            text-align: left;
-            color: #ac802e;
-        }
-        .panel p,.panel2 p{
-            text-align: left;
-            font-family: 'Lato', sans-serif;
-            margin: 10px 60px;
-            line-height: 20px;
-            font-weight: bold;
-            font-size: 17px;
-            color: rgb(58, 49, 29);
-        }
-        .panel img,.panel2 img{
-            width: 100%;
-            margin: auto;
-            text-align: center;
-            padding-top: 60px;
-        }
-        .panels img{
-            width: 1030px;
-            height: 500px;
-        }
-        @media screen and (max-width:768px){
-            
-        }
-
-        
-    </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -171,86 +51,80 @@
                 </button>
             </div>
         </header>
-        <!-- banner -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <h1 class="banner">
-                        <!-- <img src="./Place/banner.jpg" alt=""> -->
-                    </h1>
-                </div>
-            </div>
-        </div>
-        
-        <!-- place -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <div class="main-content">
-            <article class="place">
-                <input class="area" checked id="one" name="place" type="radio">
-                <label for="one">North</label>
-                <input class="area" id="two" name="place" type="radio" value="Two">
-                <label for="two">West</label>
-                <input class="area" id="three" name="place" type="radio">
-                <label for="three">South</label>
-                <div class="panels">
-                    <div class="panel">
-                        <img src="./Place/22.png" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                            8：00 ~ 12：00<br>
-                            13：00 ~ 17：00<br>
-                            18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/11.png" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                        8：00 ~ 12：00<br>
-                        13：00 ~ 17：00<br>
-                        18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                    </div>
-                    <div class="panel2">
-                        <img src="./Place/33.jpg" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                            8：00 ~ 12：00<br>
-                            13：00 ~ 17：00<br>
-                            18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/44.png" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                            8：00 ~ 12：00<br>
-                            13：00 ~ 17：00<br>
-                            18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                    </div>
-                    <div class="panel2">
-                        <img src="./Place/44.png" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                            8：00 ~ 12：00<br>
-                            13：00 ~ 17：00<br>
-                            18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                        <img src="./Place/11.png" alt="picture">
-                        <h2>Xinsheng Viaduct Playground  /  Skate Park</h2>
-                        <p>Open hours：<br>
-                            8：00 ~ 12：00<br>
-                            13：00 ~ 17：00<br>
-                            18：00 ~ 22：00<br></p>
-                        <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        </div>
+    <!-- banner -->
+    <div class="banner">
+        <h1><img src="./Place/banner.jpg" alt=""></h1>
     </div>
+        
+    <!-- place -->
+    <div class="main-content">
+        <article class="tabs">
+		<input checked id="one" name="tabs" type="radio" class="menu">
+	    <label class="lable-menu" for="one">North</label>
+
+	    <input id="two" name="tabs" type="radio" value="Two" class="menu">
+	    <label class="lable-menu" for="two">West</label>
+
+	    <input id="three" name="tabs" type="radio" class="menu">
+	    <label class="lable-menu" for="three">South</label>
+
+	    <div class="panels">
+
+		    <div class="panel">
+                <img src="./Place/22.png" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+                <img src="./Place/11.png" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+		    </div>
+
+		    <div class="panel2">
+                <img src="./Place/33.jpg" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+                <img src="./Place/11.png" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+		    </div>
+
+		    <div class="panel2">
+                <img src="./Place/55.jpg" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+                <img src="./Place/66.jpg" alt="picture">
+                <h2>Xinsheng Viaduct Skate Park</h2>
+                <p>Open hours：<br>
+                    8：00 ~ 12：00<br>
+                    13：00 ~ 17：00<br>
+                    18：00 ~ 22：00<br></p>
+                <p>MRT:Bannan Line (BL Line) or Zhonghe-Xinlu Line (Y Line) to Zhongxiao Xinsheng Station, exit 1. </p>
+		    </div>
+		</div>
+    </article>
 </div>
-        
-        
+    
+
         <!-- footer -->
         <div class="main-footer">
             <div class="footer-content">
