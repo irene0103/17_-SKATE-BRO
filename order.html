@@ -8,213 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
     <link rel="stylesheet" href="jquery-3.6.1.js">
+    <link rel="stylesheet" href="order.css">
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
-        *{
-            list-style: none;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .main-content{
-            max-width: 1200px;
-            margin: auto;
-            padding-top: 180px;
-            position: relative;
-            /* display: flex; */
-        }
-        
-        /* 3d box */
-        body {
-            --border: 3.5px;
-            --width: 90%;
-            --height: 160px;
-            --outline: 12px;
-            --translate: 8px;
-            --skew-angle: 45deg;
-        }
-        .border {
-            border: var(--border) solid black;
-            background-color: #fff;
-        }
-        .flex-row {
-            display: flex;
-            flex-direction: row;
-        }
-        .box {
-            width: var(--width);
-            height: var(--height);
-            margin-top: 20px;
-            background-color: #FFDBD0;
-        }
-        .bottom-outline {
-            width: var(--width);
-            height: var(--outline);
-            border-top-width: 0px !important;
-            transform: skew(var(--skew-angle)) translateX(var(--translate));
-            position: relative;
-        }
-
-        /* height would be implicitly same as box */
-        .right-outline {
-            width: var(--outline);
-            border-left-width: 0 !important;
-            border-bottom-width: 0 !important;
-            transform: skew(0deg, var(--skew-angle)) translateY(var(--translate));
-            margin-top: 20px;
-        }
-/* 3d box */
-        .item{
-            display: flex;
-        }
-        .item h1{
-            font-size: 30px;
-            font-weight: bold;
-            text-shadow: 3px 2px 0px #FE986B;
-            line-height: 1.5;
-            letter-spacing: 1.5px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #aaa;
-        }
-        .item-list{
-            display: flex;
-            height: 160px;
-
-        }
-        .item-description{
-            width: 70%;
-        }
-        .item-pic{
-            width: 30%;
-            height: 160px;
-        }
-        .item-pic img{
-            width: 80%;
-            height: 100%;
-            padding-left: 30px;
-        }
-        .item-title{
-            width: 50%;
-        }
-        .item-title h2{
-            margin: 30px 20px 10px 20px;
-            font-size: 20px;
-        }
-        .item-title p{
-            margin: 30px 20px 10px 20px;
-            font-size: 18px;
-        }
-        .item-volume{
-            margin: 20px 40px;
-            display: flex;
-            /* padding-right: 20px; */
-        }
-        .item-volume input[type="button"]{
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-        }
-        .item-volume input[type="button"]:hover{
-            color: #ECAF3A;
-        }
-        .item-volume input[type="text"]{
-            background: none;
-            border: none;
-            text-align: center;
-            font-size: 18px;
-        }
-        .item-del{
-            width: 5%;
-            margin: auto;
-            padding-right: 20px;
-            text-align: right;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .item-del:hover{
-            color: #ECAF3A;
-        }
-        .order-summary{
-            width: 30%;
-            height: 100%;
-            margin: 20px;
-            padding: 20px;
-            background-color: #F5D79C;
-        }
-        .order-summary-list{
-            background-color: #FFEFD0 ;
-            padding-bottom: 70px;
-        }
-        .order-summary h2{
-            font-size: 30px;
-            text-align: center;
-            padding: 10px;
-            text-shadow: 3px 2px 0px #ECAF3A;
-        }
-        .order-summary h3{
-            font-size: 25px;
-            padding: 10px;
-            margin-top: 20px;
-            font-family: 'Aldrich', sans-serif;
-        }
-        .order-name{
-            margin-top: 40px;
-            padding: 10px;
-            font-size: 20px;
-
-        }
-        .order-price{
-            padding: 10px;
-            font-size: 18px;
-            text-align: right;
-        }
-        .order-bottom{
-            margin-top: 80px;
-        }
-        .order-bottom-list{
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            font-size: 18px;
-
-        }
-        .checkout,.continue{
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .checkout .checkout-btn{
-            border: none;
-            background: none;
-        }
-        .checkout-btn a{
-            text-decoration: none;
-            background-color: #ECAF3A;
-            width: 300px;
-            height: 50px;
-            font-size: 25px;
-            color: #304B3D;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            border-radius: 100px;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            transition: .3s;
-        }
-        .checkout-btn a:hover{
-            transform: scale(1.05);
-        }
-        .checkout-btn a:active{
-            transform: scale(1);
-            box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
-        }
-        .continue a{
-            color: #000000;
-            font-size: 18px;
-        }
-    </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -259,7 +54,7 @@
         <div class="main-content">
             <div class="item">
                 <div class="item-description">
-                    <h1>Item description</h1>
+                    <h1>ITEM DESCRIPTION</h1>
                         <div class="flex-row">
                             <div class="box border">
                                 <div class="item-list">
@@ -310,15 +105,15 @@
                 <div class="order-summary">
                     <h2>ORDER SUMMARY</h2>
                     <div class="order-summary-list">
-                        <h3>Item description</h3>
+                        <h3>ITEM DESCRIPTION</h3>
                         <div class="order-name">
-                            <p>Krooked Eyes 8.06"</p>
+                            <p>Krooked Eyes</p>
                         </div>
                         <div class="order-price">
                             <p>$3,400</p>
                         </div>
                         <div class="order-name">
-                            <p>Krooked Eyes 8.06"</p>
+                            <p>Real Busenitz Worldwide</p>
                         </div>
                         <div class="order-price">
                             <p>$3,400</p>

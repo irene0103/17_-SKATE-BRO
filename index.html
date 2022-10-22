@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
 </head>
 <body>
@@ -172,9 +173,15 @@
                 <h1>SKATE FOR FUN - NOT FOR FAME.</h1>
             </div>
             <div class="skate-pic-list">
-                <img class="fadein ltr" src="./Skate Bro/skate-pic1.jpg" alt="skateboard">
-                <img class="fadein ltr" src="./Skate Bro/skate-pic2222.jpg" alt="skateboard">
-                <img class="fadein ltr" src="./Skate Bro/skate-pic22.jpg" alt="skateboard">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="skate-pic1">
+                    <img src="./Skate Bro/skate-pic1.jpg" alt="skateboard">
+                </div>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="skate-pic2">
+                    <img src="./Skate Bro/skate-pic2222.jpg" alt="skateboard">
+                </div>
+                <div data-aos="zoom-out-left" class="skate-pic3">
+                    <img src="./Skate Bro/skate-pic22.jpg" alt="skateboard">
+                </div>
             </div>
         </div>
     </section>
@@ -261,34 +268,9 @@
             </div>
         </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // ----- Scroll 事件: 動畫 active-------
-
-    window.addEventListener("scroll", function(){
-        let slidein = document.getElementsByClassName("slidein");
-        for(let i = 0; i < slidein.length; i++){
-            if( ((this.scrollY + this.innerHeight) - slidein[i].offsetHeight / 3) > slidein[i].offsetTop){
-                    // console.log("here");
-                
-                slidein[i].classList.add("active");
-            }else{
-                slidein[i].classList.remove("active");
-            };
-        }
-    
-        let fadein = document.getElementsByClassName("fadein");
-        for(let i = 0; i < fadein.length; i++){
-            if( ((this.scrollY + this.innerHeight) - fadein[i].offsetHeight / 3) > fadein[i].offsetTop){
-                // console.log("here");
-            
-                fadein[i].classList.add("active");
-            }else{
-                fadein[i].classList.remove("active");
-            };
-        }
-    });
-
-
-    </script>
+        AOS.init();
+      </script>
 </body>
 </html>

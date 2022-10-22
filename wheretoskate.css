@@ -28,14 +28,13 @@
 .menu {
     opacity: 0;
 }
-
 .lable-menu {
     cursor: pointer;
-    background:#ef9878;
+    background:#f6d79d;
     color: #631818;
     font-weight: bold;
     border-radius: 7px 7px 0 0;
-    padding: 1.5% 6%;
+    padding: 12px 25px;
     float: left;
     border-right: 3px solid #D56534;
 }
@@ -45,7 +44,7 @@
 }
 
 .menu:checked + .lable-menu {
-    background: #eec26b;
+    background: url(./Place/2-1.png);
     color: #CD572F;
 }
 
@@ -65,10 +64,10 @@
 }
 
 .panel,.panel2 {
+    background: url(./Place/2.png);
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #eec26b;
     position: relative;
     margin: auto;
     text-align: center;
@@ -81,38 +80,36 @@
     position: absolute;
     top: 0;
 }
-.bcg-net{
-    background: url(./Place/net.png) center no-repeat;
-    background-size: cover;
+.panel img,.panel2 img{
     width: 100%;
-    height: 100%;
-}
-.panel .bcg-net img,.panel2 .bcg-net img{
-    width: 95%;
-    height: 100%;
-    margin: 15px 10px;
+    margin: auto;
 }
 
 .panel h2,.panel2 h2 {
     text-align: left;
     font-size: 19px;
     width: 65%;
-    padding: 20px 0;
-    border-bottom: 3px double #D56534;
+    padding: 20px 25px;
     font-family: 'Lato', sans-serif;
     line-height: 20px;
     font-weight: bold;
     color: #af5916;
-
+}
+.panel h2::after,.panel2 h2::after{
+    content: '';
+    display: flex;
+    margin-top: 10px;
+    border-top: 3px solid #D56534;
+    border-bottom: 3px solid #D56534;
 }
 .panel p,.panel2 p{
     text-align: left;
     font-size: 15px;
-    margin: 5px 0 25px 0;
+    margin: 0 0 25px 25px;
     font-family: 'Lato', sans-serif;
     line-height: 25px;
     font-weight: bold;
-    color: #555454;
+    color: #af5916;
 }
 /* 桌機版 */
 @media screen and (min-width:768px){

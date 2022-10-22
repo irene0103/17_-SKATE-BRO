@@ -206,6 +206,15 @@
     position: relative;
     background-image: url("/Skate Bro/bgc1.png");
 }
+.skate-pic .slogan h1{
+    letter-spacing: 2px;
+    -webkit-text-stroke:1px #627d5a;
+    color: #f6e8ce;
+    font-family: 'Bungee Inline', cursive;
+    position: relative;
+    z-index: 5;
+    top: 130px;
+}
 .skate-pic{
     width: 1200px;
     margin: auto;
@@ -234,90 +243,33 @@
 
 }
 
-.skate-pic .slogan h1{
-    font-size: 56px;
-    text-align: center;  
-    letter-spacing: 2px;
-    -webkit-text-stroke:1px #627d5a;
-    color: #f6e8ce;
-    font-family: 'Bungee Inline', cursive;
-    position: relative;
-    z-index: 5;
-    top: 130px;
-}
 .skate-pic-list{
     display: flex;
 
 }
-.skate-pic-list img:first-child{
+.skate-pic-list .skate-pic1 img{
     width: 500px;
     height: 710px;
     opacity: 76%;
     position: relative;
     top: 50px;
     left: 20px;
+    z-index: 3;
 }
-.skate-pic-list img:nth-child(2){
+.skate-pic-list .skate-pic2 img{
     width: 400px;
     height: 500px;
     position: relative;
     top: 180px;
-    z-index: 3;
+    z-index: 4;
 }
-.skate-pic-list img:last-child{
+.skate-pic-list .skate-pic3 img{
     width: 400px;
     height: 620px;
     opacity: 76%;
     position: relative;
     right: 20px;
-}
-/* ------滑入動畫------ */
-.slidein{
-    opacity: 0;
-    transition: 2.5s;
-}
-
-.ltr{
-    transform: translateX(-30%) scale(0.8);
-}
-
-.rtl{
-    transform: translateX(30%) scale(0.8);
-}
-
-.slidein.active{
-    opacity: 1;
-    transform: translateX(0%) scale(1);
-}
-
-.fadein{
-    opacity: 0;
-    transform: scale(0.8);
-    transition: 2.5s;
-}
-
-.fadein.active{
-    opacity: 1;
-    transform: scale(1);
-}
-.upwards{
-    opacity: 0;
-    transform: translateY(30%);
-}
-
-.upwards.active{
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-@keyframes fadein {
-    0%{opacity: 0;}   
-    100%{opacity: 1;} 
-}
-
-@keyframes fadeout {
-    0%{opacity: 1;}
-    100%{opacity: 0;}
+    z-index: 2;
 }
 
 .third-area{
@@ -450,20 +402,23 @@
         text-align: left; 
         right: 550px;
         transform: rotate(270deg);
+        z-index: 5;
+        top: 130px;
     }
-    .skate-pic-list img:nth-child(1){
+
+    .skate-pic-list .skate-pic1 img{
         width: 200px;
         height: 100%;
         top: 70px;
         left: 20px;
     }
-    .skate-pic-list img:nth-child(2){
+    .skate-pic-list .skate-pic2 img{
         width: 200px;
         height: 100%;
         top: 280px;
         right: 80px;
     }
-    .skate-pic-list img:nth-child(3){
+    .skate-pic-list .skate-pic3 img{
         width: 200px;
         height: 100%;
         right: 200px;
@@ -504,4 +459,21 @@
     .btn-shop a,.customize button a{
         font-size: 20px;
     }   
+}
+/* 電腦版 */
+@media screen and (min-width:768px){
+    .skate-pic .slogan h1{
+        font-size: 56px;
+        text-align: center;  
+        z-index: 5;
+        top: 130px;
+        left: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 8s steps(26) infinite;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 1060px;}
+    }
 }

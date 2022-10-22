@@ -39,6 +39,7 @@
     display: block;
     text-align: center;
     padding: 15px 30px;
+    transition: .3s;
 }
 
 .main-header .container-header .header-search{
@@ -161,6 +162,9 @@
         top: -500px;
         z-index: 10;
     }
+    .main-header .container-header .main-nav a:hover{
+        transform: translateX(-20px);
+    }
     .main-header .container-header .main-nav a::after{
         content: '';
         display: flex;
@@ -277,6 +281,9 @@
     }
     .main-header .container-header .main-nav a{
         padding: 15px;
+    }
+    .main-header .container-header .main-nav a:hover{
+        transform:translateY(-5px);
     }
     .main-header .container-header .header-search{
         height: 35px;
