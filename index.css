@@ -180,8 +180,9 @@
 }
 .btn-shop a,.customize button a{
     text-decoration: none;
+    width: fit-content;
     font-size: 25px;
-    padding: 8px 25px;
+    padding: 8px 20px;
     color: #304B3D;
     display: flex;
     justify-content: center;
