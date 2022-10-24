@@ -207,7 +207,6 @@
     background-image: url("/Skate Bro/bgc1.png");
 }
 .skate-pic .slogan h1{
-    letter-spacing: 2px;
     -webkit-text-stroke:1px #627d5a;
     color: #f6e8ce;
     font-family: 'Bungee Inline', cursive;
@@ -387,7 +386,7 @@
         height: 830px;
         margin: auto;
         position: relative;
-        background-image: url("/Skate Bro/bgc1.png");
+        background: url(./Skate Bro/bcg1.png);
     }
     .skate-pic{
         width: 1200px;
@@ -463,17 +462,17 @@
 /* 電腦版 */
 @media screen and (min-width:768px){
     .skate-pic .slogan h1{
-        font-size: 56px;
+        font-size: 57px;
         text-align: center;  
         z-index: 5;
         top: 130px;
         left: 100px;
         overflow: hidden;
         white-space: nowrap;
-        animation: typing 8s steps(26) infinite;
+        animation: typing 7s steps(27) infinite;
     }
     @keyframes typing {
         from {width: 0;}
-        to {width: 1060px;}
+        to {width: 1000px;}
     }
 }

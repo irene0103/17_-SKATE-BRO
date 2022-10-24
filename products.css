@@ -176,10 +176,14 @@
     margin: auto;
     padding: 0 15px;
 }
+.swiper-slide:hover{
+    box-shadow:0 0;
+    transform:translate(3px,3px);
+}
 .swiper-slide {
     text-align: center;
     font-size: 17px;
-    padding: 20px 5px;
+    padding: 15px 5px;
     line-height: 1.5;
     letter-spacing: 1.5px;
     flex-direction: column;
@@ -188,6 +192,8 @@
     box-sizing: border-box;
     box-shadow: 6px 7px #FDBE02;
     border-radius: 8px;
+    transform: translate(0,0);
+    transition: all .2s cubic-bezier(.15,.62,.43,.8);
     margin: 50px 0;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -214,6 +220,7 @@
     color: #ECAF3A;
     padding: 0 20px;
 }
+
 /* 手機版 */
 @media screen and (max-width:767px){
     .main-content{

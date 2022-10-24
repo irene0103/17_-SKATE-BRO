@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css-header.footer.css">
     <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="jquery-3.6.1.js">
+    <link rel="stylesheet" href="all.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="icon" href="./logo/logo-ico.ico" type="image/x-icon" />
 </head>
@@ -74,7 +76,7 @@
                     <div class="product-price">
                         <p>$3,400</p>
                     </div>
-                    <div class="product-btn">
+                    <div class="product-btn" id="addcart">
                         <button class="addtocart">
                             <a href="order.html">Add to cart</a>
                         </button>
@@ -192,29 +194,10 @@
             </div>
         </div>
     </div>
-    <!-- button -->
-    <script src="./button.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 90,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <script src="all.js"></script>
+  
 </body>
 </html>

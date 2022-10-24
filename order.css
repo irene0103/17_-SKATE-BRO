@@ -284,6 +284,7 @@
         border-top-width: 0px !important;
         transform: skew(var(--skew-angle)) translateX(var(--translate));
         position: relative;
+        
     }
 
     /* height would be implicitly same as box */
