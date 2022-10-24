@@ -143,6 +143,7 @@
 .checkout .checkout-btn{
     border: none;
     background: none;
+    border-radius: 100px;
 }
 .checkout-btn a{
     text-decoration: none;
