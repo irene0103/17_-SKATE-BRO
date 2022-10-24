@@ -204,7 +204,7 @@
     height: 950px;
     margin: auto;
     position: relative;
-    background-image: url("/Skate Bro/bgc1.png");
+    background: url("/Skate Bro/bgc1.png");
 }
 .skate-pic .slogan h1{
     -webkit-text-stroke:1px #627d5a;
@@ -386,7 +386,7 @@
         height: 830px;
         margin: auto;
         position: relative;
-        background: url(./Skate Bro/bcg1.png);
+        background: url("/Skate Bro/bgc1.png");
     }
     .skate-pic{
         width: 1200px;
