@@ -30,7 +30,7 @@ window.addEventListener("load", function(){
 ///刪除
 $(function(){
   $('.item-del').click(function(){ 
-      $(this).closest('.item-menu').css('display','none')
+      $(this).parents('.item-menu').css('display','none')
   })
 })
 
@@ -65,6 +65,18 @@ $(function(){
             imgs[i].onclick = showLarge;
         }
     }
-    
     window.addEventListener("load", init, false);
+
+    ///客製化輸入字
+    $(function () {	
+			let textMax = $('#talk').attr('maxlength')
+			$('#feedback').html(` maximum <span style="color:#ECAF3A;">${textMax}</span> letters.`)
+
+			$('#talk').keyup(function(){
+				let textLength = $(this).val().length
+				$('#feedback').html(` maximum <span style="color:#ECAF3A">${textMax - textLength}</span> letters.`)
+
+				$('#content').text($('#talk').val()).css('font','16px')
+			})
+		});		
  

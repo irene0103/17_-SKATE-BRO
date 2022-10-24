@@ -14,7 +14,6 @@
 .product{
     width: 100%;
     display: flex;
-    /* outline: 1px solid red; */
 }
 .product-pic{
     width: 50%;
