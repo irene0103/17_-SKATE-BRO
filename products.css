@@ -89,27 +89,27 @@
 .addtocart,.backtotop{
     border: none;
     background: none;
+    background-color: #ECAF3A;
+    width: fit-content;
+    height: 50px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s;
 }
 .product-btn a ,.btn-end a{
     text-decoration: none;
-    background-color: #ECAF3A;
-    width: fit-content;
     padding: 0 30px;
-    height: 50px;
     font-size: 25px;
     color: #304B3D;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 100px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: .3s;
 }
-.addtocart a:hover ,.backtotop a:hover{
+.addtocart:hover ,.backtotop:hover{
     transform: scale(1.05);
 }
-.addtocart a:active ,.backtotop a:active{
+.addtocart:active ,.backtotop:active{
     transform: scale(1);
     box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
 }

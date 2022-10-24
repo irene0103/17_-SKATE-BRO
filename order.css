@@ -143,27 +143,23 @@
 .checkout .checkout-btn{
     border: none;
     background: none;
-    border-radius: 100px;
-}
-.checkout-btn a{
-    text-decoration: none;
     background-color: #ECAF3A;
     width: 300px;
     height: 50px;
-    font-size: 25px;
-    color: #304B3D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     border-radius: 100px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     transition: .3s;
 }
-.checkout-btn a:hover{
+.checkout-btn a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #304B3D;
+    margin: auto;
+}
+.checkout-btn:hover{
     transform: scale(1.05);
 }
-.checkout-btn a:active{
+.checkout-btn:active{
     transform: scale(1);
     box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
 }
