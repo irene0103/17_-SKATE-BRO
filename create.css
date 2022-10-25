@@ -105,31 +105,33 @@
 .title{
     margin: 20px 10px;
     font-size: 25px;
+    text-align: left;
     font-weight: bold;
 }
 .type-list{
     width: 90%;
     height: 400px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
     margin-top: 30px;
-    padding: 20px;
     border-radius: 20px;
     background-color: #f8d3c3;
     border: 5px solid #CD572F;
     box-shadow: 7px 7px 0px #ECAF3A;
 }
 .type-list-item{
-    width: 100%;
     background: none;
     border: none;
-    padding: 10px 5px;
+    padding: 10px;
     margin: auto;
     text-align: center;
     cursor: pointer;
 }
 .type-list-item img{
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    vertical-align: middle;
+    padding: 10px;
 }
 .type-list-item .item-name{
     display: none;
@@ -174,14 +176,12 @@
     border-radius: 50%;
 }
 .color-list a:hover{
-    border: 3px solid #ffffff;
-    outline: 3px solid #ECAF3A;
+    border: 3px solid #ECAF3A;
     transition: .3s;
     border-radius: 50%;
 }
 .color-list a:focus{
-    border: 3px solid #ffffff;
-    outline: 3px solid #ECAF3A;
+    border: 3px solid #ECAF3A;
     border-radius: 50%;
 }
 .color-list img{
@@ -259,12 +259,9 @@ form p{
     margin: 40px 0 10px 0;
 }
 .swiper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
+    width: 90%;
     height: 100%;
-    margin: auto;
-    padding: 0 15px;
+    padding: 20px;
 }
 .swiper-slide:hover{
     box-shadow:0 0;
@@ -273,7 +270,7 @@ form p{
 .swiper-slide {
     text-align: center;
     font-size: 17px;
-    padding: 15px 5px;
+    padding: 15px 10px;
     line-height: 1.5;
     letter-spacing: 1.5px;
     flex-direction: column;
@@ -285,30 +282,20 @@ form p{
     transform: translate(0,0);
     transition: all .2s cubic-bezier(.15,.62,.43,.8);
     margin: 50px 0;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 .swiper-slide a img {
     display: block;
-    width: 150px;
-    height: 250px;
-    padding-bottom: 10px;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
     object-fit: cover;
 }
-.swiper-button-next, .swiper-button-prev{
+.swiper .swiper-button-next,.swiper .swiper-button-prev{
     color: #ECAF3A;
-    padding: 0 20px;
 }
 /* 手機版 */
 @media screen and (max-width:767px){
@@ -349,24 +336,47 @@ form p{
         border: 7px double #ECAF3A;
         border-radius: 20px;
     }
-    .create-detail{
-        width: 80%;
-        margin: auto;
-    }
     .title{
-        margin: 40px 10px 20px 10px;
-        font-size: 20px;
-        font-weight: bold;
+        width: 100%;
+    }
+    .create-detail{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .type-list{
-        height: 300px;
+        width: 90%;
+        height: 350px;
+        justify-content: space-evenly;
+    }
+    .type-list-item{
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        margin: auto;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    .type-list-item img{
+        width: 70%;
+        vertical-align: middle;
+        margin: auto;
+    }
+    .type-list-item .item-name{
+        display: none;
         margin-top: 10px;
+        text-align: center;
     }
     .product-like{
         width: 100%;
         padding: 10px;
     }
-
     .color-list{
         width: 80%;
     }
@@ -384,13 +394,31 @@ form p{
     #content{
         width: 70px;
         position: absolute;
-        left: 145px;
+        left: 150px;
         top: 150px;
         font-size: 13px;
     }
-}
-
-/* 電腦版 */
-@media screen and (min-width:768px){
-    
+    .swiper-slide {
+        text-align: center;
+        font-size: 17px;
+        padding: 15px 10px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+        flex-direction: column;
+        background-color: #f8d3c3;
+        border: 4px solid #CD572F;
+        box-sizing: border-box;
+        box-shadow: 6px 7px #FDBE02;
+        border-radius: 8px;
+        transform: translate(0,0);
+        transition: all .2s cubic-bezier(.15,.62,.43,.8);
+        margin: 50px 0;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

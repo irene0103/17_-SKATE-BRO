@@ -26,6 +26,8 @@ window.addEventListener("load", function(){
 		}
 	}
 })
+//購物車
+
 
 ///刪除
 $(function(){
@@ -39,8 +41,8 @@ $(function(){
     
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        spaceBetween: 90,
-        slidesPerGroup: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
