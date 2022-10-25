@@ -5,6 +5,14 @@ $(function(){
   });
 })
 
+//下拉選單
+// let i=0;
+// $("#part-menu").click(function(){
+//     if($(window).width()<767){
+//         $("#part-menu-list").slideToggle();
+//     }
+// });
+
 /// + - 按鈕
 window.addEventListener("load", function(){
 	//-------------------
