@@ -81,4 +81,56 @@ $(function(){
 				$('#content').text($('#talk').val()).css('font','16px')
 			})
 		});		
+
+    //換照片
+    $(function(){
+      $('#sm-btn01').click(function(){
+        $('.create-main>ul>li:first-child').css('display','block')
+        $('.create-main>ul>li:not(:first-child)').not().hide()
+      })
+      $('#sm-btn02').click(function(){
+        $('.create-main>ul>li:nth-child(2)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(2))').not().hide()
+      })
+      $('#sm-btn03').click(function(){
+        $('.create-main>ul>li:nth-child(3)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(3))').not().hide()
+      })
+      $('#sm-btn04').click(function(){
+        $('.create-main>ul>li:nth-child(4)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(4))').css('display','none')
+      })
+      $('#sm-btn05').click(function(){
+        $('.create-main>ul>li:nth-child(5)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(5))').css('display','none')
+      })
+      $('#sm-btn06').click(function(){
+        $('.create-main>ul>li:nth-child(6)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(6))').css('display','none')
+      })
+      $('#sm-btn07').click(function(){
+        $('.create-main>ul>li:nth-child(7)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(7))').css('display','none')
+      })
+      $('#sm-btn08').click(function(){
+        $('.create-main>ul>li:nth-child(8)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(8))').css('display','none')
+      })
+      $('#sm-btn09').click(function(){
+        $('.create-main>ul>li:nth-child(9)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(9))').css('display','none')
+      })
+      $('#sm-btn10').click(function(){
+        $('.create-main>ul>li:nth-child(10)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(10))').css('display','none')
+      })
+      $('#sm-btn11').click(function(){
+        $('.create-main>ul>li:nth-child(11)').css('display','block')
+        $('.create-main>ul>li:not(:nth-child(11))').css('display','none')
+      })
+      $('#sm-btn12').click(function(){
+        $('.create-main>ul>li:last-child').css('display','block')
+        $('.create-main>ul>li:not(:last-child').css('display','none')
+      })
+    })
  
