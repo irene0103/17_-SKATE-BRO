@@ -159,7 +159,8 @@
         background-color: #ffdc9ae0;
         position: absolute;
         transition: .7s;
-        top: -800px;
+        top: 100px;
+        left: -100%;
         z-index: 10;
     }
     
@@ -196,7 +197,7 @@
     }
     #menu-switch:checked + .wrap .main-header .container-header .main-nav {
         transition: .7s;
-        top: 100%;
+        left: 0;
     }
     .main-header .container-header .menu_btn span:nth-child(1){
         top: 12px;
