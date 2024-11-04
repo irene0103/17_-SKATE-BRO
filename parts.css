@@ -1,185 +1,181 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap');
-*{
-    list-style: none;
-    font-family: 'Aldrich', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@400;700&display=swap");
+* {
+  list-style: none;
+  font-family: "Aldrich", sans-serif;
 }
-.main-header .container-header .main-nav a:nth-child(2){
-    color: #952426;
+.main-header .container-header .main-nav a:nth-child(2) {
+  color: #952426;
 }
-.main-content{
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 180px;
-    position: relative;
-    display: flex;
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 180px;
+  position: relative;
+  display: flex;
 }
-.side-menu{
-    width: 250px;
-    height: 350px;
-    background-color: #EEB74E;
-    box-shadow: 7px 6px 0px #CC562F;
-    border-radius: 0px 17px 17px 0px;
-    margin: 10px 20px 10px 0;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 125px;
+.side-menu {
+  width: 250px;
+  height: 350px;
+  background-color: #eeb74e;
+  box-shadow: 7px 6px 0px #cc562f;
+  border-radius: 0px 17px 17px 0px;
+  margin: 10px 20px 10px 0;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 125px;
 }
-.menu a{
-    display: flex;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 18px;
+.menu a {
+  display: flex;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
 }
-nav a p{
-    font-weight: bold;
-    font-size: 21px;
-    padding-top: 25px;
+nav a p {
+  font-weight: bold;
+  font-size: 21px;
+  padding-top: 25px;
 }
-nav a p::after{
-    content: '+';
-    padding: 0 5px;
+nav a p::after {
+  content: "+";
+  padding: 0 5px;
 }
-.menu a:hover{
-    transform: scale(1.05);
-    transition: .5s;
+.menu a:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
-.wheels-main{
-    width: 950px;
-    height: 100%;
+.wheels-main {
+  width: 950px;
+  height: 100%;
 }
-.breadcrumb{
-    margin: 10px 30px;
-    padding-top: 15px;
+.breadcrumb {
+  margin: 10px 30px;
+  padding-top: 15px;
 }
-.breadcrumb ol{
-    display: flex;
+.breadcrumb ol {
+  display: flex;
 }
-.breadcrumb li + li::before{
-    content: '>';
-    color: #000000;
-    padding: 0 20px;
+.breadcrumb li + li::before {
+  content: ">";
+  color: #000000;
+  padding: 0 20px;
 }
-.breadcrumb li:last-child a{
-    background-color: #EEB74E;
-    padding: 5px;
-    border-radius: 5px;
-    
+.breadcrumb li:last-child a {
+  background-color: #eeb74e;
+  padding: 5px;
+  border-radius: 5px;
 }
-.breadcrumb li a{
-    text-decoration: none;
-    font-size: 17px;
-    color: #000000;
-    font-weight: bold;
-    letter-spacing: 2px;
+.breadcrumb li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-.wheels{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: auto;
+.wheels {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
 }
-.wheels-list{
-    width: 80%;
-    height: 80%;
-    position: relative;
+.wheels-list {
+  width: 80%;
+  height: 80%;
+  position: relative;
 }
-.wheels-pic{
-    width: 80%;
-    height: 80%;
-    padding: 20px 10px;
-    margin-bottom: 15px;
-    background-color: #f8d3c3;
-    border: 4px solid #CD572F;
-    border-radius: 15px;
-    box-shadow: 8px 8px #F1B500;
-    transform: translate(0,0);
-    transition: all .2s cubic-bezier(.15,.62,.43,.8);
+.wheels-pic {
+  width: 80%;
+  height: 80%;
+  padding: 20px 10px;
+  margin-bottom: 15px;
+  background-color: #f8d3c3;
+  border: 4px solid #cd572f;
+  border-radius: 15px;
+  box-shadow: 8px 8px #f1b500;
+  transform: translate(0, 0);
+  transition: all 0.2s cubic-bezier(0.15, 0.62, 0.43, 0.8);
 }
-.wheels-pic:hover{
-    box-shadow:0 0;
-    transform:translate(3px,3px);
+.wheels-pic:hover {
+  box-shadow: 0 0;
+  transform: translate(3px, 3px);
 }
-.wheels-pic img{
-    width: 100%;
-    height: 85px;
+.wheels-pic img {
+  width: 100%;
+  height: 85px;
 }
-.wheels-content p{
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+.wheels-content p {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
-.wheels-list:hover p{
-    color: #b74f2c;
+.wheels-list:hover p {
+  color: #b74f2c;
 }
-.page{
-    height: 30px;
-    display: inline-block;
-    margin: 30px 50px;
+.page {
+  height: 30px;
+  display: inline-block;
+  margin: 30px 50px;
 }
-.page ul{
-    display: flex;
+.page ul {
+  display: flex;
 }
-.page li a{
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
+.page li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
 }
-.page li .active{
-    background-color: #F1B500;
-    color: white;
-    border-radius: 5px;
+.page li .active {
+  background-color: #f1b500;
+  color: white;
+  border-radius: 5px;
 }
-.page li a:hover{
-    background-color: #F1B500;
-    color: white;
-    border-radius: 5px;
+.page li a:hover {
+  background-color: #f1b500;
+  color: white;
+  border-radius: 5px;
 }
-
 
 /* 手機版 */
-@media screen and (max-width:767px){
-    .wrap{
-        overflow: hidden;
-    }
-    .main-content{
-        max-width: 100%;
-        padding-top: 130px;
-    }
-    .side-menu{
-        display: none;
-    }
-    .wheels-list{
-        width: 80%;
-        margin: 15px 20px;
-    }
-    
+@media screen and (max-width: 767px) {
+  .wrap {
+    overflow: hidden;
+  }
+  .main-content {
+    max-width: 100%;
+    padding-top: 130px;
+  }
+  .side-menu {
+    display: none;
+  }
+  .wheels-list {
+    width: 80%;
+    margin: 15px 20px;
+  }
 }
 /* 電腦版 */
-@media screen and (min-width:768px){
-    .wheels{
-        width: 950px;
-        grid-template-columns: repeat(4,1fr);
-    }
-    .page{
-        margin: 30px 280px;
-    }
-    .wheels-list{
-        width: 80%;
-        margin: 25px;
-        position: relative;
-    }
-    .wheels-pic{
-        width: 160px;
-        height: 110px;
-    }
-    .wheels-pic img{
-        width: 100%;
-        height: 100%;
-    }
+@media screen and (min-width: 768px) {
+  .wheels {
+    width: 950px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .page {
+    margin: 30px 280px;
+  }
+  .wheels-list {
+    width: 80%;
+    margin: 25px;
+    position: relative;
+  }
+  .wheels-pic {
+    width: 160px;
+    height: 110px;
+  }
+  .wheels-pic img {
+    width: 100%;
+    height: 100%;
+  }
 }

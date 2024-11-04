@@ -57,7 +57,7 @@
         <div class="main-content">
             <div class="product">
                 <div class="product-pic">
-                    <img id="large" src="./products/main.png" alt="products">
+                    <img id="large" src="" alt="products">
                 </div>
 
                 <div class="product-detail">
@@ -197,6 +197,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="jquery-3.6.1.js"></script>
     <script src="all.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const imgSrc = urlParams.get('img');
+            if (imgSrc) {
+                document.getElementById('large').src = imgSrc;
+            }
+        });
+    </script>
   
 </body>
 </html>
